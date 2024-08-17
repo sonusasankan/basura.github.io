@@ -6,6 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+
+    </style>
 </head>
 <body>
     <!--landing page starts-->
@@ -392,7 +413,40 @@
             <div class="title"><h2>Testimonials</h2></div>
             <div class="test_text"><p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p></div>
         </div>
-        <div class="carousel"></div>
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
     <!--Testimonials ends-->
     <!--contact us starts-->
@@ -456,7 +510,7 @@
                     <div class="foot_adress_block">
                         <div class="contact_us_title"><h4>Contact us:</h4></div>
                         <div class="foot_adress">
-                            <p>Email: info@positivus.com</p>
+                            <p>Email: info@basura.com</p>
                             <p>Phone: 555-567-8901</p>
                             <p>Address: 1234 Main St
                                 Moonstone City, Stardust State 12345</p>
@@ -470,12 +524,31 @@
                 <div class="portion"></div>
             </div>
             <div class="copy_rights_block">
-                <p>© 2023 Positivus. All Rights Reserved.</p>
+                <p>© 2024 Basura. All Rights Reserved.</p>
                 <a href="#"><p>Privacy Policy</p></a>
             </div>
         </footer>
     </div>
     <!--footer ends-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+    </script>
 </body>
 </html>
