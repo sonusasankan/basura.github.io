@@ -141,8 +141,8 @@ a:hover{
     color: #fff;
 }
 .header_image{
-    width: 533px;
-    height: 533px;
+    width: 500px;
+    height: 500px;
 }
 .header_image > img{
     width: 100%;
@@ -802,7 +802,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.subscribe_block > input{
+.sub_input{
     width: 200px;
     height: 50px;
     border-radius: 15px;
@@ -1052,6 +1052,7 @@ footer{
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 60px;
     }
     .work_title{
         width: 100%;
@@ -1091,6 +1092,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 40px;
     }
     .team_text{
         margin: 0;
@@ -1222,16 +1224,16 @@ footer{
         display: flex;
         flex-direction: column;
         height: 150px;
-        width: 350px;
+        width: 320px;
         margin: 10px 0 10px 0;
     }
-    .subscribe_block > input{
+    .sub_input{
         margin:  0 0 20px 10px;
         width: 280px;
     }
     .subscribe_btn{
         margin-left: 10px;
-        width: 290px;
+        width: 280px;
     }
     .portion{
         margin: 20px 0;
@@ -1243,3 +1245,126 @@ footer{
         flex-direction: column;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav_bar,.header,.logo_types,.service_name,.service_cards,.cta_block,.case_study_block,.working_process_block,.accordion_block
+    ,.team_block,.testimonals_block,.contact_us_block,.footer_block{
+        padding: 0 20px;
+    }
+    a{
+        font-size: 18px;
+    }
+    .nav_btn{
+        width: 121px;
+        height: 60px;
+    }
+    .header_content {
+        width: 400px;
+        height: auto;
+    }
+    .header_text{
+        margin-top: 60px;
+    }
+    .header_image{
+        height: 450px;
+        width: 450px;
+    }
+    .company_logo{
+        width: 90px;
+        height: 50px;
+    }
+    .service_card{
+        width: 340px;
+        height: auto;
+    }
+    .service_title_desc{
+        width: 140px;
+    }
+    .service_title_desc:first-child{
+        width: 160px;
+    }
+    .cta_image{
+        width: 350px;
+        height: 300px;
+        padding-left: 30px;
+    }
+    .cta_image > img{
+        width: 100%;
+    }
+    .case_title{
+        width: 330px;
+    }
+    .work_title{
+        width: 440px;
+    }
+    .contact_us_block{
+        margin-top: 20px;
+    }
+    .contact_image{
+        width: 50%;
+    }
+    .foot_links{
+        margin-top: 10px;
+    }
+    .foot_icons{
+        margin-top: 20px;
+    }
+    .foot_links > a > p{
+        font-size: 10px;
+    } 
+    .subscribe_block{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub_input{
+        margin-bottom: 10px;
+        width: 250px;
+    }
+}
+
+
+/* 
+@media only screen and (min-width: 1024px) {
+    .service_cards{
+        display: flex;
+        flex-direction: row;
+    }
+    .service_card{
+        width: 390px;
+    }
+    .case_title{
+        width: 300px;
+    }
+    .team_card{
+        width: 300px;
+        margin: 10px 50px;
+    }
+    .foot_links{
+        margin-top: 10px;
+    }
+    .foot_icons{
+        margin-top: 20px;
+    }
+    .foot_links > a > p{
+        font-size: 15px;
+    }
+    .subscribe_block{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .sub_input{
+        margin-bottom: 10px;
+        width: 250px;
+    }
+} */
