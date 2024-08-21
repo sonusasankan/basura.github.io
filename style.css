@@ -887,6 +887,9 @@ footer{
         line-height: 24px;
         text-align: left;
     }
+    /* .landing_page{
+        padding: 0 20px;
+    } */
     .nav_links{
         display: none;
     }
@@ -1055,7 +1058,7 @@ footer{
         margin-bottom: 60px;
     }
     .work_title{
-        width: 100%;
+        max-width: 390px;
         display: flex;
         align-items: center;
         justify-content: center;
