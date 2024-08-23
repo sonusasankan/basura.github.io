@@ -201,7 +201,12 @@ button:hover{
 
 .service_img{
     width: 178px;
-    height: 51px;
+    height: 100px;
+}
+
+.service_img > img{
+    width: 90%;
+    height: 20%;
 }
 
 .service_cards{
@@ -211,7 +216,6 @@ button:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: aqua;
     align-items: center;
     justify-content: center;
 }
@@ -241,6 +245,7 @@ button:hover{
     min-width: 280px;
     width: auto;
 }
+
 .service_image{
     width: 250px;
     height: 250px;
@@ -332,11 +337,16 @@ button:hover{
     flex-direction: row;
 }
 .case_title{
-    width: 250px;
+    width: 270px;
     height: 51px;
-    background-color: #79BF46;
+    /* background-color: #79BF46; */
     margin-left: 20px;
     border-radius: 10px;
+    padding: 0 10px;
+}
+.case_title > img{
+    width: 100%;
+    height: 30%;
 }
 
 .case_study_text{
@@ -378,7 +388,8 @@ button:hover{
 }
 .work_title{
     height: 51px;
-    width: 400px;
+    width: 420px;
+    padding: 0 10px;
     background-color: #79BF46;
     border-radius: 10px;
     margin-left: 10px;
@@ -593,12 +604,15 @@ button:hover{
     flex-direction: row;
 }
 .title{
-    width: 250px;
+    max-width: 270px;
+    width: auto;
     height: 51px;
     background-color: #79BF46;
+    padding: 0 10px;
+    border-radius: 10px;
 }
 
-.test_text{
+.testminoal_text{
     width: 470px;
     height: 51px;
     margin-left: 30px;
@@ -615,7 +629,7 @@ button:hover{
 .contact_us_block{
     width: 100%;
     height: 100%;
-    padding: 20px 100px 0 100px;
+    padding: 20px 0px 0 0px;
 }
 .contact_page{
     width: 100%;
@@ -722,7 +736,7 @@ button:hover{
     width: 100%;
     height: 100%;
     margin-top: 50px;
-    padding: 0 100px 0 100px;
+    /* padding: 0 100px 0 100px; */
 }
 footer{
     width: 100%;
@@ -792,11 +806,11 @@ footer{
 }
 .contact_us_title{
     background-color: #79BF46;
-    width: 125px;
+    width: 135px;
     height: 26px;
     border-radius: 7px;
     margin: 10px;
-    padding: o 7px;
+    padding: 0 10px;
 }
 .foot_adress{
     width: 100%;
@@ -875,7 +889,8 @@ footer{
     color: #fff;
 }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     h1{
         font-family: Space Grotesk;
         font-size: 43px;
@@ -945,6 +960,7 @@ footer{
     .header_text{
         width: 100%;
         height: auto;
+        margin-top: 10px;
     }
     .submit_btn{
         width: 100%;
@@ -969,7 +985,7 @@ footer{
     }
     .services_block{
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -990,18 +1006,31 @@ footer{
         justify-content: center;
     }
     .service_card{
-        width: 390px;
+        min-width: 320px;
+        width: auto;
         height: auto;
     }
+    .service_title_desc{
+        max-width: 90px;
+        width: auto;
+        margin: 30px 0 0 20px;
+    }
+    .service_img > img{
+        width: 80%;
+        height: 20%;
+    }
     .service_text{
-        width: 400px;
-        height: 100%;
+        max-width: 400px;
+        width: auto;
+        height: auto;
         margin: 0;
     }
     .service_image{
-        width: 165px;
-        height: 115px;
-        margin: 100px 50px 0 0;
+        min-width: 165px;
+        width: auto;
+        min-height: 115px;
+        height: auto;
+        margin: 90px 50px 20px 0;
     }
     .learn_more_btn{
         margin-bottom: 30px;
@@ -1048,7 +1077,7 @@ footer{
     }
     .case_study_block{
         width: 100%;
-        height: 100%;
+        height: auto;
         padding: 0 20px;
     }
     .case{
@@ -1062,11 +1091,18 @@ footer{
     .case_title{
         padding: 10px;
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
+    .case_title > img{
+        width: 90%;
+        height: 30%;
+    }
     .case_study_text{
-        width: 400px;
-        margin-top: 15px;
+        max-width: 400px;
+        width: auto;
+        height: auto;
+        margin: 15px 0 0 0;        
     }
     .case_studies{
         width: 100%;
@@ -1087,12 +1123,15 @@ footer{
     }
     .work_title_block{
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
-        margin-bottom: 60px;
     }
     .work_title{
         max-width: 390px;
+        width: auto;
+        padding: 10px;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1101,6 +1140,7 @@ footer{
     .work_text{
         width: 100%;
         margin: 10px;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -1109,6 +1149,7 @@ footer{
         width: 100%;
         height: auto;
         padding: 0 10px;
+        margin: 0;
     }
     .accordion{
         padding: 10px;
@@ -1132,11 +1173,14 @@ footer{
         margin-top: 40px;
     }
     .team_text{
-        margin: 0;
+        margin: auto;
         width: 100%;
+        height: auto;
     }
     .team_card{
+        max-width: 350px;
         width: 100%;
+        height: auto;
         padding: 0 10px;
         margin: 20px 0;
     }
@@ -1147,10 +1191,12 @@ footer{
         margin: 0;
     }
     .name_role{
-        width: 100%;
+        width: auto;
+        height: auto;
     }
     .person_about{
-        width: 100%;
+        width: auto;
+        height: auto;
     }
     .team_btn{
         width: 90%;
@@ -1177,9 +1223,9 @@ footer{
         justify-content: center;
         margin-bottom: 10px;
     }
-    .test_text{
-        width: 100%;
-        margin: 10px;
+    .testminoal_text{
+        width: auto;
+        margin-left: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1261,16 +1307,19 @@ footer{
         display: flex;
         flex-direction: column;
         height: 150px;
-        width: 320px;
+        max-width: 320px;
+        width: auto;
         margin: 10px 0 10px 0;
     }
     .sub_input{
         margin:  0 0 20px 10px;
-        width: 280px;
+        min-width: 230px;
+        width: auto;
     }
     .subscribe_btn{
         margin-left: 10px;
-        width: 280px;
+        max-width: 280px;
+        width: auto;
     }
     .portion{
         margin: 20px 0;
@@ -1281,9 +1330,13 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
 }
 
-@media only screen and (max-width: 767px) {
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     h1{
         font-size: 50px;
     }
@@ -1328,11 +1381,19 @@ footer{
     }
     .service_card{
         max-width: 340px;
-        height: auto;
         width: auto;
+        height: auto;
+    }
+    .learn_more_btn{
+        width: 180px;
+    }
+    .arrow_btn,.learn_more_text{
+        margin-left: 10px;
     }
     .service_title_desc{
-        width: 140px;
+        min-width: 140px;
+        width: auto;
+        margin: 30px 0 0 20px;
     }
     .service_title_desc:first-child{
         width: 160px;
@@ -1340,6 +1401,10 @@ footer{
     .service_image{
         height: 150px;
         margin-top: 80px;
+    }
+    .service_img > img{
+        width: 100%;
+        height: 20%;
     }
     .cta_title_desc{
         width: 300px;
@@ -1357,6 +1422,12 @@ footer{
         width: 300px;
         height: auto;
     }
+    .case_title{
+        min-width: 270px;
+        padding: 0 10px;
+        width: auto;
+        height: auto;
+    }
     .cta_image{
         width: 350px;
         height: 300px;
@@ -1366,98 +1437,217 @@ footer{
         width: 100%;
     }
     .work_title{
-        width: 440px;
+        min-width: 420px;
+        width: auto;
+        height: auto;
+        padding: 0 10px;
+    }
+    .team_card{
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        margin:  10px;
     }
     .contact_us_block{
         margin-top: 20px;
     }
     .contact_image{
         width: 50%;
+        margin: 0;
     }
     .foot_links{
         margin-top: 10px;
     }
+    .form :where(.contact-option, .contact-type) {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
+    .contact_input_block > input {
+        max-width: 300px;
+        width: auto;
+    }
     .foot_icons{
         margin-top: 20px;
     }
+    .foot_links{
+        min-width: 330px;
+        width: auto;
+    }
     .foot_links > a > p{
-        font-size: 10px;
+        font-size: 12px;
     } 
     .subscribe_block{
         display: flex;
         flex-direction: column;
     }
     .sub_input{
-        margin-bottom: 10px;
-        width: 250px;
+        margin:  0 0 20px 10px;
+        min-width: 250px;
+        width: auto;
     }
-}
-@media only screen and (min-width: 768px) {
-    .service_card{
-        min-width: 340px;
+    .subscribe_btn{
+        margin-left: 10px;
+        max-width: 280px;
+        width: auto;
     }
-    .case_title{
-        width: 330px;
-    }
+
 }
 
-@media only screen and (max-width: 1023px) {
-    .service_cards{
-        display: flex;
-        flex-direction: row;
-    }
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .service_card{
-        width: 380px;
+        max-width: 380px;
+        width: auto;
+        height: auto;
     }
     .service_image{
-        width: 100px;
-        margin-top: 50px;
+        height: 150px;
+        margin-top: 80px;
+    }
+    .service_img > img{
+        width: 100%;
+        height: 20%;
     }
     .team_card{
-        width: 300px;
-        /* margin: 10px 50px; */
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        margin:  10px;
     }
-    .foot_links{
-        margin-top: 10px;
+    .case_title{
+        min-width: 270px;
+        width: auto;
+        padding: 0 10px;
     }
-    .foot_icons{
-        margin-top: 20px;
+    .cta_image{
+        width: 350px;
+        height: 300px;
+        padding-left: 30px;
     }
-    .foot_links > a > p{
-        font-size: 15px;
+    .cta_image > img{
+        width: 100%;
+    }
+    .contact_us_block{
+        padding: 20px 0 0 0 ;
+    }
+    .contact_image{
+        margin: 0;
+        overflow: hidden;
+    }
+    .footer_block{
+        padding: 20px 0 0 0;
     }
     .subscribe_block{
         display: flex;
         flex-direction: column;
-        margin-left: 10px;
     }
     .sub_input{
-        margin-bottom: 10px;
-        width: 250px;
-    }
-} 
-
-
-@media only screen and (min-width: 1024px) {
-    .service_card{
-        max-width: 590px;
+        margin:  0 0 20px 10px;
+        min-width: 280px;
         width: auto;
     }
+    .subscribe_btn{
+        margin-left: 10px;
+        min-width: 280px;
+        width: auto;
+    }
+    .foot_links{
+        min-width: 330px;
+        width: auto;
+    }
+    .foot_links > a > p{
+        font-size: 15px;
+    } 
+}
+
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .service_card{
+        max-width: 390px;
+        width: auto;
+        height: auto;
+    }
+    .service_image{
+        height: 150px;
+        margin-top: 80px;
+    }
     .team_card{
-        width: 300px;
-        margin: 10px ;
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        margin:  10px;
+    }
+    .cta_image{
+        width: 350px;
+        height: 300px;
+        padding-left: 30px;
+    }
+    .cta_image > img{
+        width: 100%;
     }
     .case_title{
-        width: 300px;
+        min-width: 270px;
+        width: auto;
+        padding: 0 10px;
     }
+    .contact_us_block{
+        padding: 20px 0 0 0 ;
+    }
+    .contact_image{
+        margin: 0;
+        overflow: hidden;
+    }
+    .footer_block{
+        padding: 20px 0 0 0;
+    }
+    .subscribe_block{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub_input{
+        margin:  0 0 20px 10px;
+        min-width: 280px;
+        width: auto;
+    }
+    .subscribe_btn{
+        margin-left: 10px;
+        min-width: 280px;
+        width: auto;
+    }
+    .foot_links{
+        min-width: 330px;
+        width: auto;
+    }
+    .foot_links > a > p{
+        font-size: 15px;
+    } 
 }
 
 
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1201px) {
     .service_card{
-        width: 600px;
+        max-width: 480px;
+        width: auto;
+        height: auto;
+    }
+    .team_card{
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        margin:  10px;
+    }
+    .service_image{
+        height: 200px;
+        margin-top: 80px;
     }
 }
-
-
-

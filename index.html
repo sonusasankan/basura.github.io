@@ -7,26 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <style>
-        .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 500px;
-        height: 500px;
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-    }
-
-    </style>
 </head>
 <body>
     <!--landing page starts-->
@@ -83,7 +63,10 @@
     <!--services page starts-->
     <div class="services_block">
         <div class="service_name">
-            <div class="service_img"><h2>Services</h2></div>
+            <div class="service_img">
+                <h2>Services</h2>                                
+                <img src="images/curve.png" alt="">
+            </div>
             <div class="service_text">
                 <p>At Basura, Our services are designed to help businesses, big or small, to achieve their environmental goals through precise waste profiling and advanced analytics.</p>        
             </div>
@@ -218,6 +201,7 @@
         <div class="case">
             <div class="case_title">
                 <h2>Case studies</h2>
+                <img src="images/curve.png" alt="">
             </div>
             <div class="case_study_text">
                 <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
@@ -420,41 +404,10 @@
     <div class="testimonals_block">
         <div class="title_desc">
             <div class="title"><h2>Testimonials</h2></div>
-            <div class="test_text"><p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p></div>
+            <div class="testminoal_text"><p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p></div>
         </div>
         <div class="carousel">
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
         </div>
     </div>
     <!--Testimonials ends-->
@@ -462,7 +415,7 @@
     <div class="contact_us_block">
         <div class="title_desc">
             <div class="title"><h2>Contact Us</h2></div>
-            <div class="test_text" style="width: 330px;"><p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p></div>
+            <div class="testminoal_text" style="width: 330px;"><p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p></div>
         </div>
         <div class="contact_page">
             <div class="form_block">
@@ -538,25 +491,6 @@
         </footer>
     </div>
     <!--footer ends-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <script>
-    var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-    </script>
 </body>
 </html>
