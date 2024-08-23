@@ -4,9 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: aqua;
-}
 h1{
     font-family: Space Grotesk;
     font-size: 60px;
@@ -1550,7 +1547,7 @@ footer{
         height: 20%;
     }
     .team_card{
-        max-width: 370px;
+        max-width: 350px;
         width: 100%;
         height: auto;
         padding: 0 10px;
@@ -1560,6 +1557,15 @@ footer{
         min-width: 270px;
         width: auto;
         padding: 0 10px;
+    }
+    .work_title{
+        min-width: 420px;
+        width: auto;
+        height: auto;
+        padding: 0 10px;
+    }
+    .media{
+        width: 90%;
     }
     .cta_image{
         width: 350px;
