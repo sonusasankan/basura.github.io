@@ -4,11 +4,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
 h1{
     font-family: Space Grotesk;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 500;
-    line-height: 76.56px;
+    line-height: 60px;
     text-align: left;
     color: #000000;
 }
@@ -21,9 +32,9 @@ h2{
 }
 h3{
     font-family: Space Grotesk;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
-    line-height: 38.28px;
+    line-height: 32px;
     text-align: left;
 }
 h4{
@@ -35,7 +46,7 @@ h4{
 }
 p{
     font-family: Space Grotesk;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 22.97px;
     text-align: left;
@@ -60,7 +71,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 100px 0 100px ;
+    padding: 15px 100px 0 100px ;
 }
 .nav_menu{
     display: none;
@@ -88,28 +99,42 @@ p{
     display: flex;
     align-items: center;
 }
+.nav_link > a{
+    padding: 0 20px;
+}
 a{
     text-decoration: none;
     color: #000000;
     padding: 0 10px;
     font-family: Space Grotesk;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
 }
-a:hover{
-    cursor: pointer;
-}
+
 .nav_btn{
-    width: 178px;
-    height: 68px;
-    border-radius: 14px ;
-    border: 2px solid #355354;
+    width: 100%;
+    height: auto;
+    border-radius: 10px ;
+    padding: 8px;
+    border: 1px solid #355354;
     background-color: #fff;
+    color: #000000;
 }
 button:hover{
     cursor: pointer;
+}
+
+.secondary_btn:hover{
+    background-color: #355354;
+    color: #fff;
+}
+
+.nav_link > a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
 }
 
 .header{
@@ -119,7 +144,7 @@ button:hover{
     flex-direction: row;
     justify-content: space-between;
     padding: 0 100px 0 100px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .header_content{
     width:  100%;
@@ -132,76 +157,112 @@ button:hover{
 }
 .header_heading{
     width: 500px;
-    height: 154px;
+    height: auto;
+    margin-top: 30px;
 }
 
 .header_text{
     width: 498px;
-    height: 112px;
-    margin-top: 100px;
+    height: auto;
+    padding-top: 30px;
+    margin: 25px 0px;
 }
 .submit_btn{
-    width: 300px;
-    height:  68px;
+    width: 250px;
+    height: 50px;
     padding: 20px 35px 20px 35px;
-    border-radius: 14px ;
+    border-radius: 14px;
     border: 1px solid #fff;
     background-color: #355354;
     margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .submit_btn > a{
     color: #fff;
 }
+.submit_btn:hover{
+    cursor: pointer;
+}
 .header_image{
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 .header_image > img{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
 }
 
 
-.logo_types{
-    width:  100%;
-    height: 100%;
-    padding: 0px 100px 0px 100px;
+.primary_btn{
+    background-color: #355354;
+    margin-top: 30px;
+}
+.primary_btn > a{
+    color: #fff;
+}
+.collab{
+    height: auto;
+    width: 100%;
+    overflow-y: scroll;
+    display: inline-flex;
+    white-space: nowrap;
+    margin-top: 50px;
+}
+
+.collab > ul{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-top: 10px;
 }
-.company_logo{
-    width: 125px;
-    height: 48px;
+.collab_nav{
+    height: auto;
+    width: auto;
+    padding: 0 16px;
 }
-.company_logo > img{
-    width: 100%;
-    height: 100%;
+.company_image{
+    height: 150%;
+    width: 160%;
+    padding: 0 100px;
+    filter: grayscale(100%);
 }
+
 
 
 .services_block{
     height: auto;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .service_name{
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0 100px 0 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
 }
 .service_text{
     width: 730px;
     height: auto;
     margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .service_img{
     width: 178px;
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .service_img > img{
@@ -218,20 +279,32 @@ button:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .service_card{
     width: 600px;
-    height: 310px;
-    margin: 10px;
+    max-height: 310px;
+    height: 100%;
+    margin: 20px;
     display: flex;
     justify-content: space-between;
     border-radius: 40px;
     border: 1px solid #355354;
     box-shadow: 0px 5px 0px 0px #191A23;
+    background-color: #f3f3f3;
+    transition: 0.4s ease;
 }
 
-
+.service_card:hover{
+    cursor: pointer;
+    /* background-color: aliceblue; */
+    transform: translateY(-20px);
+    transition: 0.4s ease;
+}
+.service_card:hover::after{
+    opacity: 1;
+}
 .service_title_desc{
     width: 221px;
     height: 210px;
@@ -250,10 +323,12 @@ button:hover{
     width: 250px;
     height: 250px;
     margin: 20px;
+    filter: grayscale(100%);
+
 }
 .service_image > img{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
 }
 
 .learn_more_btn{
@@ -265,7 +340,7 @@ button:hover{
 .arrow_btn{
     width: 40px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
     margin: 5px 0 10px 20px;
     background-color: #355354;
     border: 1px solid #355354;
@@ -283,11 +358,12 @@ button:hover{
     width: 100%;
     height: 100%;
     padding: 0 100px 0 100px; 
+    margin-top: 80px;
 }
 .cta_card{
     width: 100%;
     height: auto;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 45px;
     background-color: #f3f3f3;
     display: flex;
@@ -297,7 +373,7 @@ button:hover{
 .cta_title_desc{
     width: 600px;
     height: auto;
-    margin: 50px;
+    margin: 50px 30px 50px 50px;
 }
 .cta_title{
     width: 450px;
@@ -314,13 +390,14 @@ button:hover{
     padding-right: 20px;
     display: flex;
     justify-content: flex-end;
+    margin-right: 50px;
 }
 .cta_image > img{
-    width: 60%;
-    height: 100%;
+    width: 70%;
+    height: 110%;
 }
 .proposal_btn{
-    width: 350px;
+    width: 270px;
 }
 
 
@@ -328,13 +405,14 @@ button:hover{
     width: 100%;
     height: 100%;
     padding: 0 100px 0 100px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 .case{
     width: 100%;
     height: 51px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 .case_title{
     width: 270px;
@@ -343,6 +421,10 @@ button:hover{
     margin-left: 20px;
     border-radius: 10px;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .case_title > img{
     width: 100%;
@@ -373,11 +455,39 @@ button:hover{
     color: #fff;
 }
 
+.individual_case_study{
+    width: 100%;
+    height: auto;
+    margin: 30px;
+}
 
+.case_study_about{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+.case_learn_btn{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.case_learn_btn > p{
+    color: #79BF46;
+    font-weight: 400;
+    font-size: 20px;
+}
+.case_learn_arrow_btn{
+    background: none;
+    border: none;
+    color: #79BF46;
+    padding-left: 20px;
+}
 .working_process_block{
     height: 51px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 70px;
     padding: 0 100px 0 100px;
 }
 .work_title_block{
@@ -408,6 +518,10 @@ button:hover{
     padding: 10px 100px 0 100px;
 }
 
+b{
+    font-size: 30px;
+    margin-right: 10px;
+}
 .accordion {
     color: black;
     cursor: pointer;
@@ -429,6 +543,7 @@ button:hover{
 .active, .accordion:hover {
     background-color: #f3f3f3;
 }
+
 
 .accordion:after {
     content: '\002B';
@@ -470,18 +585,26 @@ button:hover{
     border: 1px solid black;
     margin-bottom: 20px;
     box-shadow: 0px 3px 0px 0px #191A23;
+    transition: 0.4s ease;
 }
-
+.display_block:hover{
+    transform: translateY(-10px);
+    transition: 0.4s ease;
+}
+.display_block:hover::after{
+    opacity: 1;
+}
 .team_block{
     width: 100%;
     height: 100%;
-    padding: 20px 100px 0 100px;
+    margin-top: 50px;
 }
 .team_title_desc{
     width: 100%;
-    height: 51px;
+    height: auto;
     display: flex;
     flex-direction: row;
+    padding: 20px 100px 20px 100px;
 }
 .team_title{
     width: 120px;
@@ -519,12 +642,22 @@ button:hover{
     border-radius: 40px;
     border: 1px solid #191A23;
     box-shadow:  0px 5px 0px 0px #191A23;
+    transition: 0.4s ease;
+
+}
+.team_card:hover{
+    cursor: pointer;
+    transform: translateY(-16px);
+    transition: 0.4s ease;
+}
+.team_card:hover::after{
+    opacity: 1;
 }
 .card_content{
     width: 100%;
     height: auto;
-    margin: 30px 30px 30px 10px;
     padding: 10px 0 0 0;
+    margin-bottom: 25px;
 }
 .name_role{
     width: 100%;
@@ -536,16 +669,18 @@ button:hover{
 .profile_image{
     width: 100px;
     height: 100px;
+    filter: grayscale(100%);
 }
 .profile_image > img{
     width: 100%;
     height: 100%;
 }
 .name_media{
-    width: 230px;
+    width: 200px;
     height: 100px;
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 .media{
     height: 40px;
@@ -575,15 +710,17 @@ button:hover{
 
 .person_about{
     width: 100%;
-    height: 100px;
+    min-height: 100px;
+    height: 100%;
     border-top: 1px solid black;
     padding-top: 5px;
 }
 
 .team_btn{
+    margin-top: 30px;
     float: right;
     margin-left: 100px;
-    width: 200px;
+    width: 190px;
     height: 50px;
     border-radius: 10px;
     border: 1px solid black;
@@ -592,14 +729,19 @@ button:hover{
     color: #fff;
 }
 .testimonals_block{
-    margin-top: 70px;
+    margin-top: 170px;
     width: 100%;
     height: 100%;
     padding: 20px 100px 0 100px;
 }
+
+
+
+
 .title_desc{
     width: 100%;
     height: 50px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
 }
@@ -618,46 +760,52 @@ button:hover{
     margin-left: 30px;
 }
 
-.carousel{
+.carousel_block{
     width: 100%;
-    height: 635px;
+    height: auto;
     background-color: #355354;
     border-radius: 45px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact_us_block{
     width: 100%;
     height: 100%;
-    padding: 20px 0px 0 0px;
+    padding: 20px 100px 0 100px;
+    margin: 70px 0;
 }
 .contact_page{
     width: 100%;
-    height: 773px;
+    height: 550px;
     background-color: #f3f3f3;
     border-radius: 45px;
     margin-top: 20px;
-    padding-top: 30px ;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
 }
 .form_block{
-    width: 556px;
-    height: 633px;
+    width: 600px;
+    height: 400px;
     margin: 50px;
 }
 .contact_image{
     width: 290px;
-    height: 600px;
+    height: 500px;
     margin-top: 40px;
-    margin-left: 280px;
+    margin-left: 440px;
     overflow: hidden;
 }
 .contact_image > img{
     width: 200%;
-    height: 100%;
+    height: 90%;
 }
-
+.swiper-slide:hover{
+    cursor: pointer;
+}
 
 .form .contact-box {
     margin-top: 20px;
@@ -735,8 +883,8 @@ button:hover{
 .footer_block{
     width: 100%;
     height: 100%;
-    margin-top: 50px;
-    /* padding: 0 100px 0 100px; */
+    margin-top: 100px;
+    padding: 0 100px 0 100px;
 }
 footer{
     width: 100%;
@@ -926,6 +1074,9 @@ footer{
         line-height: 24px;
         text-align: left;
     }
+    a{
+        font-size: 12px;
+    }
     /* .landing_page{
         padding: 0 20px;
     } */
@@ -963,7 +1114,7 @@ footer{
         margin-top: 10px;
     }
     .submit_btn{
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
     .header_image{
@@ -1069,8 +1220,8 @@ footer{
         padding: 10px;
     }
     .proposal_btn{
-        width: 100%;
-        height: auto;
+        width: 224px;
+        height: 25px;
     }
     .cta_image{
         display: none;
@@ -1103,7 +1254,7 @@ footer{
         max-width: 400px;
         width: auto;
         height: auto;
-        margin: 15px 0 0 0;        
+        margin: 35px 0 0 0;        
     }
     .case_studies{
         width: 100%;
@@ -1141,7 +1292,7 @@ footer{
     }
     .work_text{
         width: 100%;
-        margin: 10px;
+        margin: 20px 10px 10px 10px ;
         height: auto;
         display: flex;
         align-items: center;
@@ -1168,6 +1319,7 @@ footer{
     }
     .team_title_desc{
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1178,6 +1330,7 @@ footer{
         margin: auto;
         width: 100%;
         height: auto;
+        margin-top: 20px;
     }
     .team_card{
         max-width: 350px;
@@ -1219,7 +1372,8 @@ footer{
         margin-left: 0;
     }
     .team_btn{
-        width: 90%;
+        width: 40%;
+        height: 20px;
         margin-left: 15px;
         float: none;
     }
@@ -1245,6 +1399,8 @@ footer{
     }
     .testminoal_text{
         width: auto;
+        height: auto;
+        margin-top: 20px;
         margin-left: auto;
         display: flex;
         align-items: center;
@@ -1361,7 +1517,7 @@ footer{
         font-size: 50px;
     }
     h3{
-        font-size: 25px;
+        font-size: 20px;
     }
     *{
         margin: 0;
@@ -1372,11 +1528,11 @@ footer{
         padding: 0 20px;
     }
     a{
-        font-size: 18px;
+        font-size: 16px;
     }
     .nav_btn{
-        width: 121px;
-        height: 60px;
+        width: 100px;
+        height: 30px;
     }
     .header_content {
         width: 400px;
@@ -1400,8 +1556,9 @@ footer{
         height: 50px;
     }
     .service_card{
-        max-width: 340px;
+        max-width: 320px;
         width: auto;
+        max-height: 310px;
         height: auto;
     }
     .learn_more_btn{
@@ -1532,7 +1689,7 @@ footer{
 
 
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     .service_card{
         max-width: 360px;
         width: auto;
@@ -1569,7 +1726,6 @@ footer{
     }
     .cta_image{
         width: 350px;
-        height: 300px;
         padding-left: 30px;
     }
     .cta_image > img{
@@ -1611,9 +1767,9 @@ footer{
 
 
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .service_card{
-        max-width: 390px;
+        max-width: 370px;
         width: auto;
         height: auto;
     }
@@ -1622,7 +1778,7 @@ footer{
         margin-top: 80px;
     }
     .team_card{
-        max-width: 370px;
+        max-width: 350px;
         width: 100%;
         height: auto;
         padding: 0 10px;
@@ -1679,6 +1835,7 @@ footer{
     .service_card{
         max-width: 480px;
         width: auto;
+        max-height: 310px;
         height: auto;
     }
     .team_card{
@@ -1692,4 +1849,6 @@ footer{
         height: 200px;
         margin-top: 80px;
     }
+    
 }
+
