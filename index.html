@@ -522,13 +522,15 @@
                     </div>
                 </form>
                 <div class="contact_input_block">
-                    <p>Name*</p>
-                    <input type="text" placeholder="Name">
-                    <p>Email*</p>
-                    <input type="email" placeholder="Email">
-                    <p>Message*</p>
-                    <textarea cols="30" rows="10" id="" placeholder="Message"></textarea>
-                    <button class="send_msg_btn submit_btn"><p>Send Message</p></button>
+                    <form >
+                        <label for="name">Name :</label><br>
+                        <input type="text" id="name" name="name" ><br>
+                        <label for="mail">Email * : </label><br>
+                        <input type="text" id="mail" name="mail" ><br><br>
+                        <label for="message">Message * : </label>
+                        <textarea  id="message" cols="30" rows="10"></textarea>
+                        <input class="send_msg_btn submit_btn" type="submit" value="Send Message">
+                    </form> 
                 </div>
             </div>
             <div class="contact_image">

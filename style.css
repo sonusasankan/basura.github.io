@@ -159,7 +159,7 @@ button:hover{
     padding: 20px 0px 0 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .header_heading{
@@ -213,13 +213,13 @@ button:hover{
     width: 280px;
     transition: 0.4s ease;
 }
-/* .primary_btn:hover{
-    background-color: #fff;
+.fa-arrow-right{
     transition: 0.4s ease;
 }
-.primary_btn > a:hover{
-    color: #000000;
-} */
+.fa-arrow-right:hover{
+    transform: translateX(10px);
+    transition: 0.4s ease;
+}
 .primary_btn > a{
     color: #fff;
 }
@@ -251,7 +251,9 @@ button:hover{
     filter: grayscale(100%);
 }
 
-
+.company_image:hover{
+    filter: grayscale(0);
+}
 
 .services_block{
     height: auto;
@@ -304,7 +306,7 @@ button:hover{
 
 .service_card{
     width: 600px;
-    max-height: 310px;
+    max-height: 240px;
     height: 100%;
     margin: 20px;
     display: flex;
@@ -315,10 +317,11 @@ button:hover{
     background-color: #f3f3f3;
     transition: 0.4s ease;
 }
-
+.service_card .service_image:hover{
+    filter: grayscale(0);
+}
 .service_card:hover{
     cursor: pointer;
-    /* background-color: aliceblue; */
     transform: translateY(-20px);
     transition: 0.4s ease;
 }
@@ -328,10 +331,10 @@ button:hover{
 .service_title_desc{
     width: 221px;
     height: 210px;
-    margin: 50px 0 0 20px;
+    margin: 20px 0 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .service_title{
     height: 76px;
@@ -554,7 +557,6 @@ b{
     transition: 0.4s;
     margin-left: 35px;
     background-color: #f3f3f3;
-    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -562,6 +564,7 @@ b{
 
 .active, .accordion:hover {
     background-color: #f3f3f3;
+    border-bottom: 1px solid black;
 }
 
 
@@ -605,15 +608,8 @@ b{
     border: 1px solid black;
     margin-bottom: 20px;
     box-shadow: 0px 3px 0px 0px #191A23;
-    transition: 0.4s ease;
 }
-.display_block:hover{
-    transform: translateY(-10px);
-    transition: 0.4s ease;
-}
-.display_block:hover::after{
-    opacity: 1;
-}
+
 .team_block{
     width: 100%;
     height: 100%;
@@ -670,6 +666,9 @@ b{
     transform: translateY(-16px);
     transition: 0.4s ease;
 }
+.team_card, .card_content, .name_role, .profile_image:hover{
+    filter: grayscale(0);
+}
 .team_card:hover::after{
     opacity: 1;
 }
@@ -724,8 +723,8 @@ b{
 .name{
     width: 100%;
     height: 50px;
-    margin-top: 10px;
-    margin-left: 13px;
+    /* margin-top: 10px;
+    margin-left: 13px; */
 }
 
 .person_about{
@@ -795,11 +794,10 @@ b{
     width: 100%;
     height: 100%;
     padding: 20px 100px 0 100px;
-    margin: 70px 0;
 }
 .contact_page{
     width: 100%;
-    height: 550px;
+    height: auto;
     background-color: #f3f3f3;
     border-radius: 45px;
     margin-top: 20px;
@@ -809,7 +807,7 @@ b{
 }
 .form_block{
     width: 600px;
-    height: 400px;
+    height: auto;
     margin: 50px;
 }
 .contact_image{
@@ -820,7 +818,7 @@ b{
     overflow: hidden;
 }
 .contact_image > img{
-    width: 200%;
+    width: 190%;
     height: 90%;
 }
 .swiper-slide:hover{
@@ -856,6 +854,20 @@ b{
     text-align: left;
 }
 
+
+textarea{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    resize: none;
+    border-radius: 16px;
+}
+
+
 .contact_input_block{
     display: flex;
     flex-direction: column;
@@ -864,12 +876,13 @@ b{
     margin-top: 20px;
     padding: 20px;
 }
-.contact_input_block > input {
+.contact_input_block > form > input {
     border-radius: 10px;
     height: 50px;
     padding: 20px;
     border: 1px solid black;
     margin: 10px 0;
+    width: 100%;
 }
 .contact_input_block > textarea{
     width: 100%;
@@ -893,11 +906,7 @@ b{
     align-items: center;
     justify-content: center;
     border: none;
-}
-.send_msg_btn > p{
     color: #fff;
-    text-align: center;
-    justify-content: center;
 }
 
 .footer_block{
@@ -1381,6 +1390,8 @@ footer{
         height: auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .person_about{
         width: auto;
@@ -1394,8 +1405,9 @@ footer{
         height: auto;
         display: flex;
         flex-direction: row-reverse;
-        align-items:  baseline;
+        align-items:  center;
         justify-content: space-between;
+        margin-top: 8px;
     }
     .name{
         width: auto;
@@ -1546,6 +1558,7 @@ footer{
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     h1{
         font-size: 50px;
+        line-height: 58px;
     }
     h3{
         font-size: 20px;
@@ -1573,19 +1586,20 @@ footer{
     .header_heading {
         width: 400px;
         height: auto;
-        margin-top: 10px;
+        margin: 20px 0;
     }
     .header_text{
         width: 400px;
         height: auto;
         padding: 0;
+        margin-bottom: 20px;
     }
     .primary_btn{
         margin: 0;
     }
     .header_image{
-        height: 450px;
-        width: 450px;
+        height: 70%;
+        width: auto;
     }
     .company_logo{
         width: 90px;
@@ -1814,7 +1828,7 @@ footer{
         margin-top: 80px;
     }
     .team_card{
-        max-width: 350px;
+        max-width: 300px;
         width: 100%;
         height: auto;
         padding: 0 10px;
@@ -1834,14 +1848,14 @@ footer{
         padding: 0 10px;
     }
     .contact_us_block{
-        padding: 20px 0 0 0 ;
+        padding: 20px 100px 0 100px ;
     }
     .contact_image{
         margin: 0;
         overflow: hidden;
     }
     .footer_block{
-        padding: 20px 0 0 0;
+        padding: 20px 50px 0 50px;
     }
     .subscribe_block{
         display: flex;
@@ -1869,13 +1883,13 @@ footer{
 
 @media only screen and (min-width: 1201px) {
     .service_card{
-        max-width: 480px;
+        max-width: 460px;
         width: auto;
-        max-height: 310px;
+        max-height: 240px;
         height: auto;
     }
     .team_card{
-        max-width: 390px;
+        max-width: 330px;
         width: 100%;
         height: auto;
         padding: 0 10px;
@@ -1887,6 +1901,9 @@ footer{
     }
     .primary_btn{
         height: 50px;
+    }
+    .testimonals_block{
+        margin-bottom: 50px;
     }
 }
 
