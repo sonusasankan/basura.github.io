@@ -1,590 +1,807 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basura</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east"
+    />
     <style>
-    .swiper {
-    width: 100%;
-    height: 100%;
-}
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 500px;
-    width: 100%;
-    max-height: 300px;
-    height: auto;
-    margin: 30px;
-    border-radius: 30px;
-    background-color: #f3f3f3;
-}
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        width: 100%;
+        max-height: 300px;
+        height: auto;
+        margin: 30px;
+        border-radius: 30px;
+        background-color: #f3f3f3;
+      }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!--landing page starts-->
-    <div class="landing_page">
-        <div class="nav_bar">
-            <div class="logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div class="nav_links">
-                <div class="nav_link">
-                    <a href="#">About us</a>
-                </div>
-                <div class="nav_link">
-                    <a href="#">Services</a>
-                </div>
-                <div class="nav_link">
-                    <a href="#">Use Cases</a>
-                </div>
-                <div class="nav_link">
-                    <a href="#">Login</a>
-                </div>
-                <div class="nav_link">
-                    <button class="nav_btn secondary_btn">Contact Us</button>
-                </div>
-            </div>
-            <div class="nav_menu">
-                <i class="fa-solid fa-bars "></i>
-            </div>
+    <div class="nav_bar">
+      <div class="logo">
+        <a href="/"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="nav_links">
+        <div class="nav_link">
+          <a href="#">About us</a>
         </div>
-        <div class="header">
-            <div class="header_content">
-                <div class="header_heading">
-                    <h1>Transforming Waste into Opportunities.</h1>
-                </div>
-                <div class="header_text">
-                    <p>We are revolutionizing waste management with precision segregation, comprehensive data analytics, and artificial intelligence to help businesses and communities reduce their environmental footprint and achieve their sustainability goals.</p>
-                </div>
-                <button class="submit_btn primary_btn" ><a href="#">Book a consultation <i class="fa-solid fa-arrow-right"></i></a> </button>
-            </div>
-            <div class="header_image">
-                <img src="images/garbage_collector.png" alt="">
-            </div>
+        <div class="nav_link">
+          <a href="#">Services</a>
         </div>
+        <div class="nav_link">
+          <a href="#">Use Cases</a>
+        </div>
+        <div class="nav_link">
+          <a href="#">Login</a>
+        </div>
+        <div class="nav_link">
+          <button class="nav_btn secondary_btn">Contact Us</button>
+        </div>
+      </div>
+      <div class="nav_menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hero_content">
+        <div class="hero_heading">
+          <h1>Transforming Waste into Opportunities.</h1>
+        </div>
+        <div class="hero_text">
+          <p>
+            We are revolutionizing waste management with precision segregation,
+            comprehensive data analytics, and artificial intelligence to help
+            businesses and communities reduce their environmental footprint and
+            achieve their sustainability goals.
+          </p>
+        </div>
+        <button class="submit_btn primary_btn">
+          <a href="#"
+            >Book a consultation <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </button>
+      </div>
+      <div class="hero_image">
+        <img src="images/garbage_collector.png" alt="" />
+      </div>
     </div>
     <div class="collab">
-        <ul>
-            <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/amazon.png" alt=""></a></li></div>
-            <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/dribble.png" alt=""></a></li></div>
-            <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/hubspot.png" alt=""> </a></li></div>
-            <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/notion.png" alt=""></a></li></div>
-            <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/netflix.png" alt=""></a></li></div>
-            <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/zoom.png" alt=""></a></li></div>
-        </ul>
+      <ul>
+        <div class="collab_nav">
+          <li>
+            <a href="#"
+              ><img class="company_image" src="images/amazon.png" alt=""
+            /></a>
+          </li>
+        </div>
+        <div class="collab_nav">
+          <li>
+            <a href="#"
+              ><img class="company_image" src="images/dribble.png" alt=""
+            /></a>
+          </li>
+        </div>
+        <div class="collab_nav">
+          <li>
+            <a href="#"
+              ><img class="company_image" src="images/hubspot.png" alt="" />
+            </a>
+          </li>
+        </div>
+        <div class="collab_nav">
+          <li>
+            <a href="#"
+              ><img class="company_image" src="images/notion.png" alt=""
+            /></a>
+          </li>
+        </div>
+        <div class="collab_nav">
+          <li>
+            <a href="#"
+              ><img class="company_image" src="images/netflix.png" alt=""
+            /></a>
+          </li>
+        </div>
+        <div class="collab_nav">
+          <li>
+            <a href="#"
+              ><img class="company_image" src="images/zoom.png" alt=""
+            /></a>
+          </li>
+        </div>
+      </ul>
     </div>
     <!--landing page ends-->
     <!--services page starts-->
     <div class="services_block">
-        <div class="service_name">
-            <div class="service_img">
-                <h2>Services</h2>                                
-                <img src="images/curve.png" alt="">
-            </div>
-            <div class="service_text">
-                <p>At Basura, Our services are designed to help businesses, big or small, to achieve their environmental goals through precise waste profiling and advanced analytics.</p>        
-            </div>
+      <div class="service_name">
+        <div class="service_img">
+          <h2>Services</h2>
+          <img src="images/curve.png" alt="" />
         </div>
-        <div class="service_cards">
-                <div class="service_card" >
-                    <div class="service_title_desc">
-                        <div class="service_title">
-                            <h3>On-Site
-                                Waste Sorting</h3>
-                        </div>
-                        <div class="learn_more_btn">
-                            <button class="arrow_btn"><span class="material-symbols-outlined">
-                                north_east
-                                </span></button>
-                            <div class="learn_more_text">
-                                <p>Learn more</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service_image">
-                        <img src="images/service_cards/card_1.png" alt="">
-                    </div>
-                </div>
-                <div class="service_card" >
-                    <div class="service_title_desc">
-                        <div class="service_title">
-                            <h3>Data Collection 
-                                and Analysis</h3>
-                        </div>
-                        <div class="learn_more_btn">
-                            <button class="arrow_btn"><span class="material-symbols-outlined">
-                                north_east
-                                </span></button>
-                            <div class="learn_more_text">
-                                <p>Learn more</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service_image">
-                        <img src="images/service_cards/card_2.png" alt="">
-                    </div>
-                </div>
-                <div class="service_card">
-                    <div class="service_title_desc">
-                        <div class="service_title">
-                            <h3>Sustainable Solutions
-                                for Enterprises</h3>
-                        </div>
-                        <div class="learn_more_btn">
-                            <button class="arrow_btn"><span class="material-symbols-outlined">
-                                north_east
-                                </span></button>
-                            <div class="learn_more_text">
-                                <p>Learn more</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service_image">
-                        <img src="images/service_cards/card_3.png" alt="">
-                    </div>
-                </div>
-                <div class="service_card" >
-                    <div class="service_title_desc">
-                        <div class="service_title">
-                            <h3>Waste 
-                                Management</h3>
-                        </div>
-                        <div class="learn_more_btn">
-                            <button class="arrow_btn"><span class="material-symbols-outlined">
-                                north_east
-                                </span></button>
-                            <div class="learn_more_text">
-                                <p>Learn more</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service_image">
-                        <img src="images/service_cards/card_4.png" alt="">
-                    </div>
-                </div>
-                <div class="service_card">
-                    <div class="service_title_desc">
-                        <div class="service_title">
-                            <h3>Programming 
-                                and Workshops</h3>
-                        </div>
-                        <div class="learn_more_btn">
-                            <button class="arrow_btn"><span class="material-symbols-outlined">
-                                north_east
-                                </span></button>
-                            <div class="learn_more_text">
-                                <p>Learn more</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service_image">
-                        <img src="images/service_cards/card_5.png" alt="">
-                    </div>
-                </div>
-                <div class="service_card" >
-                    <div class="service_title_desc">
-                        <div class="service_title">
-                            <h3>Waste Audits 
-                                and Assessments</h3>
-                        </div>
-                        <div class="learn_more_btn">
-                            <button class="arrow_btn"><span class="material-symbols-outlined">
-                                north_east
-                                </span></button>
-                            <div class="learn_more_text">
-                                <p>Learn more</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service_image">
-                        <img src="images/service_cards/card_6.png" alt="">
-                    </div>
-                </div>
+        <div class="service_text">
+          <p>
+            At Basura, Our services are designed to help businesses, big or
+            small, to achieve their environmental goals through precise waste
+            profiling and advanced analytics.
+          </p>
         </div>
+      </div>
+      <div class="service_cards">
+        <div class="service_card">
+          <div class="service_title_desc">
+            <div class="service_title">
+              <h3>On-Site Waste Sorting</h3>
+            </div>
+            <div class="learn_more_btn">
+              <button class="arrow_btn">
+                <span class="material-symbols-outlined"> north_east </span>
+              </button>
+              <div class="learn_more_text">
+                <p>Learn more</p>
+              </div>
+            </div>
+          </div>
+          <div class="service_image">
+            <img src="images/service_cards/card_1.png" alt="" />
+          </div>
+        </div>
+        <div class="service_card">
+          <div class="service_title_desc">
+            <div class="service_title">
+              <h3>Data Collection and Analysis</h3>
+            </div>
+            <div class="learn_more_btn">
+              <button class="arrow_btn">
+                <span class="material-symbols-outlined"> north_east </span>
+              </button>
+              <div class="learn_more_text">
+                <p>Learn more</p>
+              </div>
+            </div>
+          </div>
+          <div class="service_image">
+            <img src="images/service_cards/card_2.png" alt="" />
+          </div>
+        </div>
+        <div class="service_card">
+          <div class="service_title_desc">
+            <div class="service_title">
+              <h3>Sustainable Solutions for Enterprises</h3>
+            </div>
+            <div class="learn_more_btn">
+              <button class="arrow_btn">
+                <span class="material-symbols-outlined"> north_east </span>
+              </button>
+              <div class="learn_more_text">
+                <p>Learn more</p>
+              </div>
+            </div>
+          </div>
+          <div class="service_image">
+            <img src="images/service_cards/card_3.png" alt="" />
+          </div>
+        </div>
+        <div class="service_card">
+          <div class="service_title_desc">
+            <div class="service_title">
+              <h3>Waste Management</h3>
+            </div>
+            <div class="learn_more_btn">
+              <button class="arrow_btn">
+                <span class="material-symbols-outlined"> north_east </span>
+              </button>
+              <div class="learn_more_text">
+                <p>Learn more</p>
+              </div>
+            </div>
+          </div>
+          <div class="service_image">
+            <img src="images/service_cards/card_4.png" alt="" />
+          </div>
+        </div>
+        <div class="service_card">
+          <div class="service_title_desc">
+            <div class="service_title">
+              <h3>Programming and Workshops</h3>
+            </div>
+            <div class="learn_more_btn">
+              <button class="arrow_btn">
+                <span class="material-symbols-outlined"> north_east </span>
+              </button>
+              <div class="learn_more_text">
+                <p>Learn more</p>
+              </div>
+            </div>
+          </div>
+          <div class="service_image">
+            <img src="images/service_cards/card_5.png" alt="" />
+          </div>
+        </div>
+        <div class="service_card">
+          <div class="service_title_desc">
+            <div class="service_title">
+              <h3>Waste Audits and Assessments</h3>
+            </div>
+            <div class="learn_more_btn">
+              <button class="arrow_btn">
+                <span class="material-symbols-outlined"> north_east </span>
+              </button>
+              <div class="learn_more_text">
+                <p>Learn more</p>
+              </div>
+            </div>
+          </div>
+          <div class="service_image">
+            <img src="images/service_cards/card_6.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
     <!--services ends-->
     <!--cta block starts-->
     <div class="cta_block">
-        <div class="cta_card">
-            <div class="cta_title_desc">
-                <div class="cta_title">
-                    <h3>Let’s make things happen</h3>
-                </div>
-                <div class="cta_text">
-                    <p>Contact us today to learn more about our waste 
-                        management services.</p>
-                </div>
-                <button class="submit_btn proposal_btn"><a href="#">Get your free proposal</a></button>
-            </div>
-            <div class="cta_image">
-                <img src="images/cta_image.png" alt="">
-            </div>
+      <div class="cta_card">
+        <div class="cta_title_desc">
+          <div class="cta_title">
+            <h3>Let’s make things happen</h3>
+          </div>
+          <div class="cta_text">
+            <p>
+              Contact us today to learn more about our waste management
+              services.
+            </p>
+          </div>
+          <button class="submit_btn proposal_btn">
+            <a href="#">Get your free proposal</a>
+          </button>
         </div>
+        <div class="cta_image">
+          <img src="images/cta_image.png" alt="" />
+        </div>
+      </div>
     </div>
     <!--cta block ends-->
     <!--case studies starts-->
     <div class="case_study_block">
-        <div class="case">
-            <div class="case_title">
-                <h2>Case studies</h2>
-                <img src="images/curve.png" alt="">
-            </div>
-            <div class="case_study_text">
-                <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
-            </div>
+      <div class="case">
+        <div class="case_title">
+          <h2>Case studies</h2>
+          <img src="images/curve.png" alt="" />
         </div>
-        <div class="carousel_block">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="individual_case_study">
-                            <div class="case_study_about">
-                                <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
-                            </div>
-                            <div class="case_learn_btn">
-                                <p>Learn more</p> <button class="case_learn_arrow_btn"><span class="material-symbols-outlined">
-                                    north_east
-                                    </span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                            <div class="individual_case_study">
-                                <div class="case_study_about">
-                                    <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
-                                </div>
-                                <div class="case_learn_btn">
-                                    <p>Learn more</p> <button class="case_learn_arrow_btn"><span class="material-symbols-outlined">
-                                        north_east
-                                        </span></button>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="swiper-slide"  >
-                            <div class="individual_case_study">
-                                <div class="case_study_about">
-                                    <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
-                                </div>
-                                <div class="case_learn_btn">
-                                    <p>Learn more</p> <button class="case_learn_arrow_btn"><span class="material-symbols-outlined">
-                                        north_east
-                                        </span></button>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="swiper-slide">Case Study</div>
-                    <div class="swiper-slide">Case Study</div>
-                    <div class="swiper-slide">Case Study</div>
+        <div class="case_study_text">
+          <p>
+            Explore Real-Life Examples of Our Proven Digital Marketing Success
+            through Our Case Studies
+          </p>
+        </div>
+      </div>
+      <div class="carousel_block">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="individual_case_study">
+                <div class="case_study_about">
+                  <p>
+                    For a local restaurant, we implemented a targeted PPC
+                    campaign that resulted in a 50% increase in website traffic
+                    and a 25% increase in sales.
+                  </p>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="case_learn_btn">
+                  <p>Learn more</p>
+                  <button class="case_learn_arrow_btn">
+                    <span class="material-symbols-outlined"> north_east </span>
+                  </button>
+                </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="individual_case_study">
+                <div class="case_study_about">
+                  <p>
+                    For a B2B software company, we developed an SEO strategy
+                    that resulted in a first page ranking for key keywords and a
+                    200% increase in organic traffic.
+                  </p>
+                </div>
+                <div class="case_learn_btn">
+                  <p>Learn more</p>
+                  <button class="case_learn_arrow_btn">
+                    <span class="material-symbols-outlined"> north_east </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="individual_case_study">
+                <div class="case_study_about">
+                  <p>
+                    For a national retail chain, we created a social media
+                    marketing campaign that increased followers by 25% and
+                    generated a 20% increase in online sales.
+                  </p>
+                </div>
+                <div class="case_learn_btn">
+                  <p>Learn more</p>
+                  <button class="case_learn_arrow_btn">
+                    <span class="material-symbols-outlined"> north_east </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Case Study</div>
+            <div class="swiper-slide">Case Study</div>
+            <div class="swiper-slide">Case Study</div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
+      </div>
     </div>
     <!--case study ends-->
     <!--working process starts-->
     <div class="working_process_block">
-        <div class="work_title_block">
-            <div class="work_title">
-                <h2>Our Working Process </h2>
-            </div>
-            <div class="work_text">
-                <p>Step-by-Step Guide to Achieving Your Business Goals</p>
-            </div>
+      <div class="work_title_block">
+        <div class="work_title">
+          <h2>Our Working Process</h2>
         </div>
+        <div class="work_text">
+          <p>Step-by-Step Guide to Achieving Your Business Goals</p>
+        </div>
+      </div>
     </div>
     <!--accordion starts-->
     <div class="accordion_block">
-        <div class="display_block">
-            <button class="accordion"><p><b>01</b> Consultation and Analysis</p></button>
-            <div class="panel">
-                <p>During the initial consultation, we analyze your current waste management system and the scale of the services required for your specific business or property. This allows us to understand your needs and create an optimal solution.</p>
-            </div>
+      <div class="display_block">
+        <button class="accordion">
+          <p><b>01</b> Consultation and Analysis</p>
+        </button>
+        <div class="panel">
+          <p>
+            During the initial consultation, we analyze your current waste
+            management system and the scale of the services required for your
+            specific business or property. This allows us to understand your
+            needs and create an optimal solution.
+          </p>
         </div>
-        <div class="display_block">
-            <button class="accordion"><p><b>02</b> Research and Development</p></button>
-            <div class="panel">
-                <p>We conduct thorough research on your specific market which includes site visits, regulatory analysis, and internal review of waste policies.</p>
-            </div>
+      </div>
+      <div class="display_block">
+        <button class="accordion">
+          <p><b>02</b> Research and Development</p>
+        </button>
+        <div class="panel">
+          <p>
+            We conduct thorough research on your specific market which includes
+            site visits, regulatory analysis, and internal review of waste
+            policies.
+          </p>
         </div>
-        <div class="display_block">
-            <button class="accordion"><p><b>03</b> Implantation</p></button>
-            <div class="panel">
-                <p>Our highly trained Material Conservationist are briefed on your specific requirements while we integrate  Basura’s data collection systems with the your existing infrastructure. Additionally, we work side by side with private couriers, municipalities, and processors to insure waste is properly collected.</p>
-            </div>
+      </div>
+      <div class="display_block">
+        <button class="accordion">
+          <p><b>03</b> Implantation</p>
+        </button>
+        <div class="panel">
+          <p>
+            Our highly trained Material Conservationist are briefed on your
+            specific requirements while we integrate Basura’s data collection
+            systems with the your existing infrastructure. Additionally, we work
+            side by side with private couriers, municipalities, and processors
+            to insure waste is properly collected.
+          </p>
         </div>
-        <div class="display_block">
-            <button class="accordion"><p><b>04</b> Monitoring and Full Scale Adaption</p></button>
-            <div class="panel">
-                <p>We will complete a full implementation of Basura's waste management system across the your facilities. Material Conservationists weigh and record data on waste streams, providing detailed reports and insights. Lastly, Basura will provide continuous support, including regular check-ins, troubleshooting, and updates on best practices.</p>
-            </div>
+      </div>
+      <div class="display_block">
+        <button class="accordion">
+          <p><b>04</b> Monitoring and Full Scale Adaption</p>
+        </button>
+        <div class="panel">
+          <p>
+            We will complete a full implementation of Basura's waste management
+            system across the your facilities. Material Conservationists weigh
+            and record data on waste streams, providing detailed reports and
+            insights. Lastly, Basura will provide continuous support, including
+            regular check-ins, troubleshooting, and updates on best practices.
+          </p>
         </div>
-        <div class="display_block">
-            <button class="accordion"><p><b>05</b> Education</p></button>
-            <div class="panel">
-                <p>Basura conducts educational sessions and workshops to inform employees, residents, or tenants about waste management recommendations, the importance of recycling, and how to reduce waste generation.</p>
-            </div>
+      </div>
+      <div class="display_block">
+        <button class="accordion">
+          <p><b>05</b> Education</p>
+        </button>
+        <div class="panel">
+          <p>
+            Basura conducts educational sessions and workshops to inform
+            employees, residents, or tenants about waste management
+            recommendations, the importance of recycling, and how to reduce
+            waste generation.
+          </p>
         </div>
-        <div class="display_block">
-            <button class="accordion"><p><b>06</b> Reporting</p></button>
-            <div class="panel">
-                <p>Basura provides regular reports on waste segregation like recycling assessments, diversion rates and other sustainability met. This includes integrating waste management data into their Environmental, Social, and Governance (ESG) reports, helping them to demonstrate their commitment to sustainability and social responsibility to stakeholders. We also work with our cleints to analyze data and identify opportunities for further waste reduction and sustainability improvements.</p>
-            </div>
+      </div>
+      <div class="display_block">
+        <button class="accordion">
+          <p><b>06</b> Reporting</p>
+        </button>
+        <div class="panel">
+          <p>
+            Basura provides regular reports on waste segregation like recycling
+            assessments, diversion rates and other sustainability met. This
+            includes integrating waste management data into their Environmental,
+            Social, and Governance (ESG) reports, helping them to demonstrate
+            their commitment to sustainability and social responsibility to
+            stakeholders. We also work with our cleints to analyze data and
+            identify opportunities for further waste reduction and
+            sustainability improvements.
+          </p>
         </div>
-        <div class="display_block">
-            <button class="accordion"><p><b>07</b> Review and Improvement </p></button>
-            <div class="panel">
-                <p>We will have a continuous feedback loop between you and Basura to ensure goals are met and services are optimized. Regular reviews to assess the effectiveness of the waste management system and discuss any changes or enhancements.</p>
-            </div>
+      </div>
+      <div class="display_block">
+        <button class="accordion">
+          <p><b>07</b> Review and Improvement</p>
+        </button>
+        <div class="panel">
+          <p>
+            We will have a continuous feedback loop between you and Basura to
+            ensure goals are met and services are optimized. Regular reviews to
+            assess the effectiveness of the waste management system and discuss
+            any changes or enhancements.
+          </p>
         </div>
+      </div>
     </div>
     <!--accordion ends-->
     <!--working process ends-->
     <!--team section starts-->
     <div class="team_block">
-        <div class="team_title_desc">
-            <div class="team_title">
-                <h2>Team</h2>
-            </div>
-            <div class="team_text"><p>Meet the skilled and experienced team behind our successful digital marketing strategies</p></div>
+      <div class="team_title_desc">
+        <div class="team_title">
+          <h2>Team</h2>
         </div>
-        <div class="team_cards_block">
-            <div class="team_card">
-                <div class="card_content">
-                    <div class="name_role">
-                        <div class="profile_image">
-                            <img src="images/team/team_01.png" alt="">
-                        </div>
-                        <div class="name_media">
-                            <div class="media"><a href="https://www.linkedin.com/in/joel-abreu-8227b2b0/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                            <div class="name">
-                                <h4>Joel Abreu</h4>
-                                <p>CEO and Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="person_about">
-                        <p>8 + years of experience in sales and management. A champion of suitability and expert in all things BASURA.</p>
-                    </div>
-                </div>  
-            </div><div class="team_card">
-                <div class="card_content">
-                    <div class="name_role">
-                        <div class="profile_image">
-                            <img src="images/team/team_1.png" alt="">
-                        </div>
-                        <div class="name_media">
-                            <div class="media"><a href="google.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                            <div class="name">
-                                <h4>Eduandy Abreu</h4>
-                                <p>Chief Technical Officer </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="person_about">
-                        <p>10+ Years in Software Engineering. A skilled project manager proficient in Python, JavaScript, Java, and HTML.</p>
-                    </div>
-                </div>  
-            </div><div class="team_card">
-                <div class="card_content">
-                    <div class="name_role">
-                        <div class="profile_image">
-                            <img src="images/team/team_1.png" alt="">
-                        </div>
-                        <div class="name_media">
-                            <div class="media"><a href="google.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                            <div class="name">
-                                <h4>Mansi Kamboj</h4>
-                                <p>Marketing Intern</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="person_about">
-                        <p>2+ Years of experience in content creation. Organization skills and proficient in scheduling content and building engagement.</p>
-                    </div>
-                </div>  
-            </div><div class="team_card">
-                <div class="card_content">
-                    <div class="name_role">
-                        <div class="profile_image">
-                            <img src="images/team/team_1.png" alt="">
-                        </div>
-                        <div class="name_media">
-                            <div class="media"><a href="google.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                            <div class="name">
-                                <h4>Varun Biyyala</h4>
-                                <p>Data Engineer Intern</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="person_about">
-                        <p>3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis</p>
-                    </div>
-                </div>  
-            </div><div class="team_card">
-                <div class="card_content">
-                    <div class="name_role">
-                        <div class="profile_image">
-                            <img src="images/team/team_1.png" alt="">
-                        </div>
-                        <div class="name_media">
-                            <div class="media"><a href="google.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                            <div class="name">
-                                <h4>Yeshwanth Kesani</h4>
-                                <p>Data Engineering Intern</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="person_about">
-                        <p>4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement</p>
-                    </div>
-                </div>  
-            </div><div class="team_card">
-                <div class="card_content">
-                    <div class="name_role">
-                        <div class="profile_image">
-                            <img src="images/team/team_1.png" alt="">
-                        </div>
-                        <div class="name_media">
-                            <div class="media"><a href="google.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                            <div class="name">
-                                <h4>Zubair Mohammed</h4>
-                                <p>Data Engineering Intern</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="person_about">
-                        <p>2+ years of experience in writing and editing
-                            Skilled in creating compelling, SEO-optimized content for various industries</p>
-                    </div>
-                </div>  
-            </div>
+        <div class="team_text">
+          <p>
+            Meet the skilled and experienced team behind our successful digital
+            marketing strategies
+          </p>
         </div>
-        <!-- <button class="team_btn submit_btn"><a href="#">See all team</a></button> -->
+      </div>
+      <div class="team_cards_block">
+        <div class="team_card">
+          <div class="card_content">
+            <div class="name_role">
+              <div class="profile_image">
+                <img src="images/team/team_01.png" alt="" />
+              </div>
+              <div class="name_media">
+                <div class="media">
+                  <a
+                    href="https://www.linkedin.com/in/joel-abreu-8227b2b0/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="name">
+                  <h4>Joel Abreu</h4>
+                  <p>CEO and Founder</p>
+                </div>
+              </div>
+            </div>
+            <div class="person_about">
+              <p>
+                8 + years of experience in sales and management. A champion of
+                suitability and expert in all things BASURA.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="team_card">
+          <div class="card_content">
+            <div class="name_role">
+              <div class="profile_image">
+                <img src="images/team/team_1.png" alt="" />
+              </div>
+              <div class="name_media">
+                <div class="media">
+                  <a href="google.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="name">
+                  <h4>Eduandy Abreu</h4>
+                  <p>Chief Technical Officer</p>
+                </div>
+              </div>
+            </div>
+            <div class="person_about">
+              <p>
+                10+ Years in Software Engineering. A skilled project manager
+                proficient in Python, JavaScript, Java, and HTML.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="team_card">
+          <div class="card_content">
+            <div class="name_role">
+              <div class="profile_image">
+                <img src="images/team/team_1.png" alt="" />
+              </div>
+              <div class="name_media">
+                <div class="media">
+                  <a href="google.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="name">
+                  <h4>Mansi Kamboj</h4>
+                  <p>Marketing Intern</p>
+                </div>
+              </div>
+            </div>
+            <div class="person_about">
+              <p>
+                2+ Years of experience in content creation. Organization skills
+                and proficient in scheduling content and building engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="team_card">
+          <div class="card_content">
+            <div class="name_role">
+              <div class="profile_image">
+                <img src="images/team/team_1.png" alt="" />
+              </div>
+              <div class="name_media">
+                <div class="media">
+                  <a href="google.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="name">
+                  <h4>Varun Biyyala</h4>
+                  <p>Data Engineer Intern</p>
+                </div>
+              </div>
+            </div>
+            <div class="person_about">
+              <p>
+                3+ years of experience in paid search advertising. Skilled in
+                campaign management and performance analysis
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="team_card">
+          <div class="card_content">
+            <div class="name_role">
+              <div class="profile_image">
+                <img src="images/team/team_1.png" alt="" />
+              </div>
+              <div class="name_media">
+                <div class="media">
+                  <a href="google.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="name">
+                  <h4>Yeshwanth Kesani</h4>
+                  <p>Data Engineering Intern</p>
+                </div>
+              </div>
+            </div>
+            <div class="person_about">
+              <p>
+                4+ years of experience in social media marketing. Proficient in
+                creating and scheduling content, analyzing metrics, and building
+                engagement
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="team_card">
+          <div class="card_content">
+            <div class="name_role">
+              <div class="profile_image">
+                <img src="images/team/team_1.png" alt="" />
+              </div>
+              <div class="name_media">
+                <div class="media">
+                  <a href="google.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="name">
+                  <h4>Zubair Mohammed</h4>
+                  <p>Data Engineering Intern</p>
+                </div>
+              </div>
+            </div>
+            <div class="person_about">
+              <p>
+                2+ years of experience in writing and editing Skilled in
+                creating compelling, SEO-optimized content for various
+                industries
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="team_btn submit_btn"><a href="#">See all team</a></button> -->
     </div>
     <!--team section ends-->
     <!--Testimonials starts-->
     <div class="testimonals_block">
-        <div class="title_desc">
-            <div class="title"><h2>Partnerships</h2></div>
-            <div class="testminoal_text"><p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p></div>
+      <div class="title_desc">
+        <div class="title"><h2>Partnerships</h2></div>
+        <div class="testminoal_text">
+          <p>
+            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+            about Our Digital Marketing Services
+          </p>
         </div>
-        <div class="carousel_block">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
+      </div>
+      <div class="carousel_block">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
+      </div>
     </div>
     <!--Testimonials ends-->
     <!--contact us starts-->
     <div class="contact_us_block">
-        <div class="title_desc">
-            <div class="title"><h2>Contact Us</h2></div>
-            <div class="testminoal_text" style="width: 330px;"><p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p></div>
+      <div class="title_desc">
+        <div class="title"><h2>Contact Us</h2></div>
+        <div class="testminoal_text" style="width: 330px">
+          <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
         </div>
-        <div class="contact_page">
-            <div class="form_block">
-                <form action="#" class="form">
-                    <div class="contact-box">
-                        <div class="contact-option">
-                            <div class="contact-type">
-                                <input type="radio" id="check-Say_Hi" name="contact-type" checked />
-                                <label for="check-Say_Hi">Say Hi</label>
-                            </div>
-                            <div class="contact-type">
-                                <input type="radio" id="check-Quote" name="contact-type" />
-                                <label for="check-Quote">Get a Quote</label>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="contact_input_block">
-                    <form >
-                        <label for="name">Name :</label><br>
-                        <input type="text" id="name" name="name" ><br>
-                        <label for="mail">Email * : </label><br>
-                        <input type="text" id="mail" name="mail" ><br><br>
-                        <label for="message">Message * : </label>
-                        <textarea  id="message" cols="30" rows="10"></textarea>
-                        <input class="send_msg_btn submit_btn" type="submit" value="Send Message">
-                    </form> 
+      </div>
+      <div class="contact_page">
+        <div class="form_block">
+          <form action="#" class="form">
+            <div class="contact-box">
+              <div class="contact-option">
+                <div class="contact-type">
+                  <input
+                    type="radio"
+                    id="check-Say_Hi"
+                    name="contact-type"
+                    checked
+                  />
+                  <label for="check-Say_Hi">Say Hi</label>
                 </div>
+                <div class="contact-type">
+                  <input type="radio" id="check-Quote" name="contact-type" />
+                  <label for="check-Quote">Get a Quote</label>
+                </div>
+              </div>
             </div>
-            <div class="contact_image">
-                <img src="images/contact_img.png" alt="">
-            </div>
+          </form>
+          <div class="contact_input_block">
+            <form>
+              <label for="name">Name :</label><br />
+              <input type="text" id="name" name="name" /><br />
+              <label for="mail">Email * : </label><br />
+              <input type="text" id="mail" name="mail" /><br /><br />
+              <label for="message">Message * : </label>
+              <textarea id="message" cols="30" rows="10"></textarea>
+              <input
+                class="send_msg_btn submit_btn"
+                type="submit"
+                value="Send Message"
+              />
+            </form>
+          </div>
         </div>
+        <div class="contact_image">
+          <img src="images/contact_img.png" alt="" />
+        </div>
+      </div>
     </div>
     <!--contact us ends-->
     <!--footer starts-->
     <div class="footer_block">
-        <footer>
-            <div class="navigation_contact_block">
-                <div class="navigation_block">
-                    <div class="foot_logo"><img src="images/footer_logo.png" alt=""></div>
-                    <div class="foot_links">
-                        <a href="#"><p>About us</p></a>
-                        <a href="#"><p>Services</p></a>
-                        <a href="#"><p>Use Cases</p></a>
-                        <a href="#"><p>Pricing</p></a>
-                        <a href="#"><p>Blog</p></a>
-                    </div>
-                    <div class="foot_icons">
-                        <div class="media foot_media"><a href="linkedin.com/"><i class="fa-brands fa-linkedin-in" ></i></a></div>
-                        <div class="media foot_media"><a href="facebook.com/"><i class="fa-brands fa-facebook" ></i></a></div>
-                        <div class="media foot_media"><a href="twitter.com/"><i class="fa-brands fa-twitter" ></i></a></div>
-                    </div>
-                </div>
-                <div class="foot_contact_block">
-                    <div class="foot_adress_block">
-                        <div class="contact_us_title"><h4>Contact us:</h4></div>
-                        <div class="foot_adress">
-                            <a href="mailto:Basura@basura.co"><p>Email: basura@basura.co</p></a>
-                            <a href="tel:646-667-2158"><p>Phone: 646-667-2158</p></a>
-                            <p>Address: 96 Wadsworth Terrace Suite 3C New York, NY 10040</p>
-                        </div>
-                    </div>
-                    <div class="subscribe_block">
-                        <input type="email" placeholder="Email" class="sub_input">
-                        <button class="subscribe_btn"><a href="#"><p>Subscribe to news</p></a></button>
-                    </div>
-                </div>
-                <div class="portion"></div>
+      <footer>
+        <div class="navigation_contact_block">
+          <div class="navigation_block">
+            <div class="foot_logo">
+              <img src="images/footer_logo.png" alt="" />
             </div>
-            <div class="copy_rights_block">
-                <p>© 2024 Basura. All Rights Reserved.</p>
-                <a href="#"><p>Privacy Policy</p></a>
+            <div class="foot_links">
+              <a href="#"><p>About us</p></a>
+              <a href="#"><p>Services</p></a>
+              <a href="#"><p>Use Cases</p></a>
+              <a href="#"><p>Pricing</p></a>
+              <a href="#"><p>Blog</p></a>
             </div>
-        </footer>
+            <div class="foot_icons">
+              <div class="media foot_media">
+                <a href="linkedin.com/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+              <div class="media foot_media">
+                <a href="facebook.com/"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </div>
+              <div class="media foot_media">
+                <a href="twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="foot_contact_block">
+            <div class="foot_adress_block">
+              <div class="contact_us_title"><h4>Contact us:</h4></div>
+              <div class="foot_adress">
+                <a href="mailto:Basura@basura.co"
+                  ><p>Email: basura@basura.co</p></a
+                >
+                <a href="tel:646-667-2158"><p>Phone: 646-667-2158</p></a>
+                <p>Address: 96 Wadsworth Terrace Suite 3C New York, NY 10040</p>
+              </div>
+            </div>
+            <div class="subscribe_block">
+              <form>
+                <input type="email" placeholder="Email" class="sub_input" />
+                <!-- <button class="subscribe_btn"><a href="#"><p>Subscribe to news</p></a></button> -->
+                <input
+                  class="subscribe_btn"
+                  type="submit"
+                  value="Subscribe to news"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="portion"></div>
+        </div>
+        <div class="copy_rights_block">
+          <p>© 2024 Basura. All Rights Reserved.</p>
+          <a href="#"><p>Privacy Policy</p></a>
+        </div>
+      </footer>
     </div>
     <!--footer ends-->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 20,
         centeredSlides: true,
@@ -602,5 +819,5 @@
         },
       });
     </script>
-</body>
+  </body>
 </html>
