@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basura</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east" />
@@ -81,7 +82,7 @@
             </div>
         </div>
     </div>
-    <div class="collab">
+    <!-- <div class="collab">
         <ul>
             <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/amazon.png" alt=""></a></li></div>
             <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/dribble.png" alt=""></a></li></div>
@@ -90,7 +91,19 @@
             <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/netflix.png" alt=""></a></li></div>
             <div class="collab_nav"><li><a href="#"><img class="company_image" src="images/zoom.png" alt=""></a></li></div>
         </ul>
-    </div>
+    </div> -->
+    <div id="partnersSwiper" class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/amazon.png" alt="Amazon"></div>
+          <div class="swiper-slide"><img src="images/dribble.png" alt="Dribbble"></div>
+          <div class="swiper-slide"><img src="images/hubspot.png" alt="HubSpot"></div>
+          <div class="swiper-slide"><img src="images/notion.png" alt="Notion"></div>
+          <div class="swiper-slide"><img src="images/netflix.png" alt="Netflix"></div>
+          <div class="swiper-slide"><img src="images/zoom.png" alt="Zoom"></div>
+          <div class="swiper-slide"><img src="images/amazon.png" alt="Amazon"></div>
+          <div class="swiper-slide"><img src="images/dribble.png" alt="Dribbble"></div>
+        </div>
+      </div>
     <!--landing page ends-->
     <!--services page starts-->
     <div class="services_block">
@@ -579,7 +592,6 @@
         </footer>
     </div>
     <!--footer ends-->
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -600,5 +612,6 @@
         },
       });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

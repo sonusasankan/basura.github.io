@@ -1,0 +1,34 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 20%; /* Adjust as needed */
+    padding: 20px;
+    text-align: center;
+  }
+
+  #partnersSwiper .swiper-wrapper .swiper-slide {
+    background-color: transparent;
+  }
+
+  #partnersSwiper .swiper-wrapper .swiper-slide img{
+    object-fit: contain;
+    max-width: 65%;
+    filter: grayscale(100%);
+  }
+
+  #partnersSwiper .swiper-wrapper .swiper-slide img:hover{
+    filter: grayscale(0%);
+  }
+
+  #partnersSwiper .swiper-container-free-mode > .swiper-wrapper{
+    transition-timing-function : linear;
+  }
