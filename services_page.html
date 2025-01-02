@@ -10,62 +10,72 @@
 </head>
 <body>
     <div class="nav_bar">
-        <div class="logo">
-          <a href="/"><img src="images/logo.png" alt="logo" /></a>
-        </div>
-        <div class="nav_links">
-          <div class="nav_link">
-            <a href="#">About us</a>
+      <nav>
+        <a href="/"><img src="images/logo.png" alt="logo"></a> 
+          <label for="toggler">
+            <i class="fa fa-bars"></i>
+          </label>
+        <input type="checkbox" id="toggler" name="">
+          <div class="menu">
+            <ul class="list">
+              <li><a href="#">About us</a></li>
+              <li><a href="services_page.html">Services</a></li>
+              <li><a href="#">Use Cases</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#" class="nav_btn secondary_btn">Contact Us</a></li>
+            </ul>
           </div>
-          <div class="nav_link">
-            <a href="#">Services</a>
-          </div>
-          <div class="nav_link">
-            <a href="#">Use Cases</a>
-          </div>
-          <div class="nav_link">
-            <a href="#">Login</a>
-          </div>
-          <div class="nav_link">
-            <button class="nav_btn secondary_btn">Contact Us</button>
-          </div>
-        </div>
+        </nav>
       </div>
       <div class="service_card_brief_description">
-        <ol>
-            <li><h3>On-Site Waste Sorting</h3>
-                <ul>
-                    <li><p><b>Material Conservationists:</b>Our trained experts manually sort your waste to maximize recycling and composting efforts.</p></li>
-                    <li><p><b>Customized Sorting Plans:</b>Tailored solutions to fit the specific needs of your properties and business.</p></li>
-                  </ul>
-            </li>
-            <li><h3>Data Collection and Analysis</h3>
-              <ul>
-                <li><p><b>Waste Profiling: :</b>Our trained experts manually sort your waste to maximize recycling and composting efforts.</p></li>
-                <li><p><b>Customized Sorting Plans:</b>Tailored solutions to fit the specific needs of your properties and business.</p></li>
-              </ul>
-            </li>
-            <li><h3>Sustainable Solutions for Enterprises</h3>
-              <ul>
-                <li><p><b>Material Conservationists:</b>Our trained experts manually sort your waste to maximize recycling and composting efforts.</p></li>
-                <li><p><b>Customized Sorting Plans:</b>Tailored solutions to fit the specific needs of your properties and business.</p></li>
-              </ul></li>
-            <li><h3>Waste Management </h3>
-              <ul>
-                <li><p><b>Material Conservationists:</b>Our trained experts manually sort your waste to maximize recycling and composting efforts.</p></li>
-                <li><p><b>Customized Sorting Plans:</b>Tailored solutions to fit the specific needs of your properties and business.</p></li>
-              </ul></li>
-            <li><h3>Programming and Workshops</h3>
-              <ul>
-                <li><p><b>Material Conservationists:</b>Our trained experts manually sort your waste to maximize recycling and composting efforts.</p></li>
-                <li><p><b>Customized Sorting Plans:</b>Tailored solutions to fit the specific needs of your properties and business.</p></li>
-              </ul></li>
-            <li><h3>Waste Audits and Assessments</h3>
-              <ul>
-                <li><p><b>Material Conservationists:</b>Our trained experts manually sort your waste to maximize recycling and composting efforts.</p></li>
-                <li><p><b>Customized Sorting Plans:</b>Tailored solutions to fit the specific needs of your properties and business.</p></li>
-              </ul></li>
-          </ol>
+        <div class="service_title">
+          <h1>On-Site Waste Sorting :</h1>
+          <ul>
+            <li>Material Conservationists: Our trained experts manually sort your waste to maximize recycling and composting efforts.</li>
+            <li>Customized Sorting Plans: Tailored solutions to fit the specific needs of your properties and business.</li>
+          </ul>
+        </div>
+        <div class="service_title">
+          <h1>Data Collection and Analysis :</h1>
+          <ul>
+            <li>Waste Profiling: Detailed tracking of different waste streams by weight, providing valuable insights into your waste generation patterns.</li>
+            <li>Reporting and Analytics: Comprehensive reports and analytics to help you understand and improve your waste management practices.</li>
+            <li>AI Integration: Utilizing artificial intelligence to enhance data analysis and provide actionable recommendations for waste reduction and sustainability.</li>
+          </ul>
+        </div>
+        <div class="service_title">
+          <h1>Sustainable Solutions for Enterprises :</h1>
+          <ul>
+            <li>Corporate Partnerships: Working with large businesses and publicly traded companies to integrate Basura’s system into their operations.</li>
+            <li>Tailored ESG Strategies: Developing custom plans to meet your specific Environmental, Social, and Governance (ESG) objectives.</li>
+            <li>Sustainability Reporting: Assisting with the creation of detailed sustainability reports for stakeholders and investors</li>
+          </ul>
+        </div>
+        <div class="service_title">
+          <h1>Waste Management : </h1>
+          <ul>
+            <li>Paper and Cardboard Recycling: Efficient collection and processing of paper products.</li>
+            <li>Plastic, Glass, and Metal Recycling: Comprehensive recycling solutions for a variety of materials.</li>
+            <li>Organic Waste Composting: Transforming food scraps, yard waste, and compostable paper into valuable compost.</li>
+            <li>Textile Recycling: Solutions for recycling clothing, linens, shoes, and accessories.</li>
+            <li>Electronic Waste Disposal: Safe and compliant disposal of electronics and hazardous household products.</li>
+            <li>Special Waste Handling: Management of construction and demolition debris, furniture, and other difficult-to-recycle items.</li>
+          </ul>
+        </div>
+        <div class="service_title">
+          <h1>Programming and Workshops : </h1>
+          <ul>
+            <li>Employee Training: Educating your staff on best practices for waste reduction and recycling.</li>
+            <li>Community Outreach: Programs to engage and educate the local community on sustainable waste management practices.</li>
+          </ul>
+        </div>
+        <div class="service_title">
+          <h1>Waste Audits and Assessments : </h1>
+          <ul>
+            <li>nitial Waste Audit: We conduct a thorough assessment of your current waste management practices to identify areas for improvement.</li>
+            <li>Ongoing Assessments: Regular evaluations to ensure continuous improvement and alignment with sustainability goals.</li>
+          </ul>
+        </div>
       </div>
       <div class="footer_block">
         <footer>
@@ -128,6 +138,16 @@
           </div>
         </footer>
       </div>
+      <script>
+        document.onscroll = (e) => {
+          console.log(e, window.scrollY);
+          if (window.scrollY > 100) {
+            document.querySelector(".nav_bar").classList.add("sticky");
+          } else {
+            document.querySelector(".nav_bar").classList.remove("sticky");
+          }
+        };
+      </script>
       <script src="script.js"></script>
 </body>
 </html>

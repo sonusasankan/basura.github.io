@@ -5,19 +5,31 @@
     margin: 30px 100px 20px 100px;
     padding: 30px;
 }
-
-h3{
+.service_title{
+    width: 100%;
+    height: auto;
+}
+h1{
+    font-family: Space Grotesk;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38.28px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 24.5%;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 30px;
+}
+li{
+    font-family: Space Grotesk;
     font-size: 24px;
-    font-weight: 400;
-    padding: 20px;
-}
-p{
-    font-size: 16px;
-    font-weight: 400;
-    padding: 10px;
-}
-b{
-    font-size: 18px;
-    font-weight: 400;
-    padding: 20px;
+    font-weight: 500;
+    line-height: 38.28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 40px;
+    padding-top: 20px;
 }
