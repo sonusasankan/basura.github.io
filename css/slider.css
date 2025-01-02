@@ -17,6 +17,7 @@
 
   #partnersSwiper .swiper-wrapper .swiper-slide {
     background-color: transparent;
+    max-width: 250px;
   }
 
   #partnersSwiper .swiper-wrapper .swiper-slide img{
@@ -28,7 +29,11 @@
   #partnersSwiper .swiper-wrapper .swiper-slide img:hover{
     filter: grayscale(0%);
   }
-
+/* 
   #partnersSwiper .swiper-container-free-mode > .swiper-wrapper{
     transition-timing-function : linear;
-  }
+  } */
+
+  .swiper-free-mode > .swiper-wrapper {
+    transition-timing-function: linear;
+}

@@ -15,16 +15,18 @@ for (i = 0; i < acc.length; i++) {
 
 const partnersSwiper = new Swiper('#partnersSwiper', {
   // Optional parameters
-  slidesPerView: 6,
+  slidesPerView: 'auto',
+  centeredSlides: true,
   direction: 'horizontal',
   loop: true,
-  speed: 2000,
+  speed: 5000,
   autoplay: {
     enabled: true,
 		delay: 0,
 		pauseOnMouseEnter: true,
 		disableOnInteraction: true,
   },
+  freeMode: true,
 
   // If we need pagination
   pagination: {
