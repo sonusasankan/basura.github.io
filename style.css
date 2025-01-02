@@ -87,14 +87,7 @@ p {
 .nav_menu {
   display: none;
 }
-.logo {
-  width: 181.68px;
-  height: 78.51px;
-}
-.logo img {
-  height: 100%;
-  width: 100%;
-}
+
 .nav_links {
   width: auto;
   height: 68px;
@@ -145,7 +138,7 @@ button:hover {
   transition: 0.4s ease;
 }
 
-.nav_link > a:hover {
+nav  a:hover {
   cursor: pointer;
   color: #7d674c;
 }
@@ -772,7 +765,7 @@ b {
 .title_desc {
   width: 100%;
   height: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
 }
@@ -812,7 +805,7 @@ b {
   height: auto;
   background-color: #f3f3f3;
   border-radius: 45px;
-  margin-top: 20px;
+  margin-top: 50px;
   padding-top: 10px;
   display: flex;
   flex-direction: row;
@@ -1174,7 +1167,7 @@ footer {
     height: 100%;
   }
   .primary_btn {
-    width: 210px;
+    width: 226px;
     height: 30px;
   }
   .logo_types {
@@ -1237,7 +1230,7 @@ footer {
     width: auto;
     min-height: 115px;
     height: auto;
-    margin: 90px 50px 20px 0;
+    margin: 110px 50px 20px 0;
   }
   .learn_more_btn {
     margin-bottom: 30px;
@@ -1256,6 +1249,8 @@ footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
   }
   .cta_title {
@@ -1437,7 +1432,7 @@ footer {
     float: none;
   }
   .testimonals_block {
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
@@ -1469,7 +1464,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 0 10px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .contact_page {
     width: 100%;
@@ -1545,6 +1540,10 @@ footer {
     max-width: 320px;
     width: auto;
     margin: 10px 0 10px 0;
+  }
+  .subscribe_block > form {
+    display: flex;
+    flex-direction: column;
   }
   .sub_input {
     margin: 0 0 20px 10px;
@@ -1747,6 +1746,10 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .subscribe_block > form {
+    display: flex;
+    flex-direction: column;
+  }
   .sub_input {
     margin: 0 0 20px 10px;
     min-width: 250px;
@@ -1812,6 +1815,10 @@ footer {
     padding: 20px 0 0 0;
   }
   .subscribe_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe_block > form {
     display: flex;
     flex-direction: column;
   }
@@ -1925,3 +1932,62 @@ footer {
     margin-bottom: 50px;
   }
 }
+
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  width: 100%;
+  }
+  nav a {
+  text-decoration: none;
+  color: #000000;
+  width: 180px;
+  height: 80px;
+  }
+  nav a img{
+    width: 100%;
+    height: 100%;
+  }
+  .list{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  
+  #toggler, label{
+  display: none;
+  }
+  label i{
+  color: black;
+  }
+  @media screen and (max-width: 768px){
+  
+  .menu{
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  }
+  label{
+  display: inline-flex;
+  }
+  #toggler:checked~.menu{
+  max-height: 100%;
+  }
+  .list{
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  }
+  .nav_btn, .secondary_btn:hover{
+    border: none;
+    background: none;
+    color: #000000;
+  }
+}  
