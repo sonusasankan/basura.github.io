@@ -411,6 +411,9 @@ button:hover {
   width: 600px;
   height: auto;
   margin: 50px 30px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .cta_title {
   width: 450px;
@@ -448,7 +451,7 @@ button:hover {
   height: 51px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 58px;
 }
 .case_title {
   width: 270px;
@@ -501,6 +504,9 @@ button:hover {
   height: auto;
   width: 100%;
   padding: 20px;
+}
+.case_study_about p {
+    color: #fff;
 }
 .case_learn_btn {
   height: auto;
@@ -1569,7 +1575,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   h1 {
     font-size: 50px;
     line-height: 58px;
@@ -1761,7 +1767,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .service_card {
     max-width: 360px;
     width: auto;
@@ -1776,7 +1782,7 @@ footer {
     height: 20%;
   }
   .team_card {
-    max-width: 350px;
+    max-width: 320px;
     width: 100%;
     height: auto;
     padding: 0 10px;
@@ -1836,7 +1842,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   .service_card {
     max-width: 370px;
     width: auto;
@@ -1899,7 +1905,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1281px) {
   .service_card {
     max-width: 460px;
     width: auto;
