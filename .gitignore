@@ -1,0 +1,35 @@
+# Mac system files
+.DS_Store
+
+# Editor directories and files
+.idea/
+.vscode/
+
+# Node.js modules
+node_modules/
+
+# Build output directories
+dist/
+build/
+public/build/
+
+# Cache files
+.cache/
+
+# Package manager lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Temporary files
+temp/
+tmp/
+
+# Log files
+*.log
+npm-debug.log*
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini

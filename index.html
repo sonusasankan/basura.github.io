@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east"
     />
     <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/flex.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <style>
       .swiper {
         width: 100%;
@@ -87,7 +89,7 @@
           </p>
         </div>
         <button class="submit_btn primary_btn">
-          <a href="#"
+          <a href="#Contact"
             >Book a consultation <i class="fa-solid fa-arrow-right"></i
           ></a>
         </button>
@@ -829,25 +831,6 @@
       </div>
       <div class="contact_page">
         <div class="form_block">
-          <form action="#" class="form">
-            <div class="contact-box">
-              <div class="contact-option">
-                <div class="contact-type">
-                  <input
-                    type="radio"
-                    id="check-Say_Hi"
-                    name="contact-type"
-                    checked
-                  />
-                  <label for="check-Say_Hi">Say Hi</label>
-                </div>
-                <div class="contact-type">
-                  <input type="radio" id="check-Quote" name="contact-type" />
-                  <label for="check-Quote">Get a Quote</label>
-                </div>
-              </div>
-            </div>
-          </form>
           <div class="contact_input_block">
             <!-- <form>
               <label for="name">Name :</label><br />
@@ -863,7 +846,7 @@
               />
             </form> -->
 
-            <div id="zf_div_uBWZh7DHbAxi_m0Cs7_PZz0o-kCtQMgbX2r6fkXJDNI"></div>
+            <!-- <div id="zf_div_uBWZh7DHbAxi_m0Cs7_PZz0o-kCtQMgbX2r6fkXJDNI"></div>
             <script type="text/javascript">
               (function () {
                 try {
@@ -925,9 +908,53 @@
                   );
                 } catch (e) {}
               })();
-            </script>
-          </div>
-        </div>
+            </script> -->
+            <!--Form start here-->
+            <form id="ContactForm" action='https://forms.zohopublic.in/basura1/form/Contactusform/formperma/MMrCMkjZF8MxylHByCmyhXHxSLaqG-zqzeeRg3qk8Eo/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+              <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+              <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+            <div class="zf-subContWrap zf-topAlign">
+              <div class="contact-box flex">
+                <input type="radio" id="Radio_1" name="Radio" value="Say&#x20;Hi" checked >
+                <label for="Radio_1" >Say&#x20;Hi</label>
+                <input type="radio" id="Radio_2" name="Radio" value="Get&#x20;a&#x20;Quote">
+                <label for="Radio_2" >Get&#x20;a&#x20;Quote</label>
+              </div>
+              <ul>
+              <!---------Single Line Starts Here---------->
+              <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+              Name 
+              <em class="zf-important">*</em>
+              </label>
+              <div class="zf-tempContDiv">
+              <span> <input type="text" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="Enter&#x20;your&#x20;Name"/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+              </div><div class="zf-clearBoth"></div></li><!---------Single Line Ends Here---------->
+              <!---------Email Starts Here---------->  
+              <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+              Email 
+              <em class="zf-important">*</em>
+              </label>
+              <div class="zf-tempContDiv">
+              <span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder=""/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+              </div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
+              <!---------Multiple Line Starts Here---------->
+              <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+              Message 
+              <em class="zf-important">*</em>
+              </label>
+              <div class="zf-tempContDiv">
+              <span> <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder=""></textarea> </span><p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+              </div><div class="zf-clearBoth"></div></li><!---------Multiple Line Ends Here---------->
+              </ul></div><!---------template Container Starts Here---------->
+              <ul>
+                <li class="zf-fmFooter">
+                <button class="zf-submitColor" >Submit</button>
+              </li>
+            </ul>
+           </div><!-- 'zf-templateWrapper' ends -->
+          </form>
+        </div><!-- 'zf-templateWidth' ends -->
+              
         <div class="contact_image">
           <img src="images/contact_img.png" alt="" />
         </div>
@@ -1017,6 +1044,14 @@
         },
       });
     </script>
-    <script src="script.js"></script>
+    <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+      var zf_MonthYearRegex = new RegExp("^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+      var zf_MandArray = [ "SingleLine", "Email", "MultiLine"]; 
+      var zf_FieldArray = [ "SingleLine", "Email", "MultiLine"]; 
+      var isSalesIQIntegrationEnabled = false;
+      var salesIQFieldsArray = [];
+      </script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="./js/validation.js"></script>
   </body>
 </html>
