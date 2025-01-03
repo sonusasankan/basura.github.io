@@ -23,7 +23,7 @@ const partnersSwiper = new Swiper('#partnersSwiper', {
     enabled: true,
 		delay: 0,
 		pauseOnMouseEnter: true,
-		disableOnInteraction: true,
+		disableOnInteraction: false,
   },
 
   // If we need pagination
@@ -39,6 +39,28 @@ const partnersSwiper = new Swiper('#partnersSwiper', {
 
 });
 
+
+// const CaseStudySlider = new Swiper('.mySwiper', {
+//   // Optional parameters
+//   slidesPerView: 3,
+//   spaceBetween: 20,
+//   direction: 'horizontal',
+//   loop: true,
+//   speed: 2000,
+//   autoplay: {
+//     enabled: true,
+// 		delay: 0,
+// 		pauseOnMouseEnter: true,
+// 		disableOnInteraction: false,
+//   },
+//   breakpoints : {
+//     600 : {
+//       slidesPerView : 2,
+//     }
+//   },
+
+// });
+
 document.onscroll = (e) => {
   console.log(e, window.scrollY);
   if (window.scrollY > 100) {
@@ -47,3 +69,4 @@ document.onscroll = (e) => {
     document.querySelector(".nav_bar").classList.remove("sticky");
   }
 };
+
