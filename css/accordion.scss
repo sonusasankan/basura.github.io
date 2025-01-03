@@ -1,0 +1,12 @@
+.accordion_block {
+    .display_block:hover{
+        background-color: #79BF46;
+        transition: all 0.3s linear;
+    }
+    .accordion{
+        background-color: transparent;
+    }
+    .accordion:hover:not(.active){
+        border: none;
+    }
+}

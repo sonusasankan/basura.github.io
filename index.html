@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basura</title>
-    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -51,7 +51,7 @@
   <body>
     <!--landing page starts-->
     <div class="nav_bar">
-      <div class="logo">
+      <!-- <div class="logo">
         <a href="/"><img src="images/logo.png" alt="logo" /></a>
       </div>
       <div class="nav_links">
@@ -73,7 +73,23 @@
       </div>
       <div class="nav_menu">
         <i class="fa-solid fa-bars"></i>
-      </div>
+      </div> -->
+      <nav>
+        <a href="/" class="nav_logo"><img src="images/logo.png" alt="logo"></a> 
+          <label for="toggler">
+            <i class="fa fa-bars"></i>
+          </label>
+        <input type="checkbox" id="toggler" name="">
+          <div class="menu">
+            <ul class="list">
+              <li><a href="#">About us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="#">Use Cases</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#" class="nav_btn secondary_btn">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
     </div>
     <div class="hero">
       <div class="hero_content">
@@ -151,7 +167,8 @@
         </div>
       </div>
       <div class="service_cards">
-        <div class="service_card">
+        <a href="services" target="_blank">
+          <div class="service_card">
           <div class="service_title_desc">
             <div class="service_title">
               <h3>On-Site Waste Sorting</h3>
@@ -168,8 +185,10 @@
           <div class="service_image">
             <img src="images/service_cards/card_1.png" alt="" />
           </div>
-        </div>
-        <div class="service_card">
+          </div>
+        </a>
+        <a href="services" target="_blank">
+          <div class="service_card">
           <div class="service_title_desc">
             <div class="service_title">
               <h3>Data Collection and Analysis</h3>
@@ -186,8 +205,10 @@
           <div class="service_image">
             <img src="images/service_cards/card_2.png" alt="" />
           </div>
-        </div>
-        <div class="service_card">
+          </div>
+        </a>
+        <a href="services_page.html" target="_blank">
+          <div class="service_card">
           <div class="service_title_desc">
             <div class="service_title">
               <h3>Sustainable Solutions for Enterprises</h3>
@@ -204,66 +225,73 @@
           <div class="service_image">
             <img src="images/service_cards/card_3.png" alt="" />
           </div>
-        </div>
-        <div class="service_card">
-          <div class="service_title_desc">
-            <div class="service_title">
-              <h3>Waste Management</h3>
-            </div>
-            <div class="learn_more_btn">
-              <button class="arrow_btn">
-                <span class="material-symbols-outlined"> north_east </span>
-              </button>
-              <div class="learn_more_text">
-                <p>Learn more</p>
+          </div>
+        </a>
+        <a href="services_page.html" target="_blank">
+          <div class="service_card">
+            <div class="service_title_desc">
+              <div class="service_title">
+                <h3>Waste Management</h3>
+              </div>
+              <div class="learn_more_btn">
+                <button class="arrow_btn">
+                  <span class="material-symbols-outlined"> north_east </span>
+                </button>
+                <div class="learn_more_text">
+                  <p>Learn more</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="service_image">
-            <img src="images/service_cards/card_4.png" alt="" />
-          </div>
-        </div>
-        <div class="service_card">
-          <div class="service_title_desc">
-            <div class="service_title">
-              <h3>Programming and Workshops</h3>
+            <div class="service_image">
+              <img src="images/service_cards/card_4.png" alt="" />
             </div>
-            <div class="learn_more_btn">
-              <button class="arrow_btn">
-                <span class="material-symbols-outlined"> north_east </span>
-              </button>
-              <div class="learn_more_text">
-                <p>Learn more</p>
+          </div>
+        </a>
+        <a href="services_page.html" target="_blank">
+          <div class="service_card">
+            <div class="service_title_desc">
+              <div class="service_title">
+                <h3>Programming and Workshops</h3>
+              </div>
+              <div class="learn_more_btn">
+                <button class="arrow_btn">
+                  <span class="material-symbols-outlined"> north_east </span>
+                </button>
+                <div class="learn_more_text">
+                  <p>Learn more</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="service_image">
-            <img src="images/service_cards/card_5.png" alt="" />
-          </div>
-        </div>
-        <div class="service_card">
-          <div class="service_title_desc">
-            <div class="service_title">
-              <h3>Waste Audits and Assessments</h3>
+            <div class="service_image">
+              <img src="images/service_cards/card_5.png" alt="" />
             </div>
-            <div class="learn_more_btn">
-              <button class="arrow_btn">
-                <span class="material-symbols-outlined"> north_east </span>
-              </button>
-              <div class="learn_more_text">
-                <p>Learn more</p>
+          </div>
+        </a>
+        <a href="services_page.html" target="_blank">
+          <div class="service_card">
+            <div class="service_title_desc">
+              <div class="service_title">
+                <h3>Waste Audits and Assessments</h3>
+              </div>
+              <div class="learn_more_btn">
+                <button class="arrow_btn">
+                  <span class="material-symbols-outlined"> north_east </span>
+                </button>
+                <div class="learn_more_text">
+                  <p>Learn more</p>
+                </div>
               </div>
             </div>
+            <div class="service_image">
+              <img src="images/service_cards/card_6.png" alt="" />
+            </div>
           </div>
-          <div class="service_image">
-            <img src="images/service_cards/card_6.png" alt="" />
-          </div>
-        </div>
+        </a>
       </div>
     </div>
     <!--services ends-->
     <!--cta block starts-->
-    <div class="cta_block">
+    <div class="cta_block block">
       <div class="cta_card">
         <div class="cta_title_desc">
           <div class="cta_title">
@@ -286,7 +314,7 @@
     </div>
     <!--cta block ends-->
     <!--case studies starts-->
-    <div class="case_study_block">
+    <div class="case_study_block ">
       <div class="case">
         <div class="case_title">
           <h2>Case studies</h2>
@@ -300,7 +328,7 @@
         </div>
       </div>
       <div class="carousel_block">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" id="CaseStudySlider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="individual_case_study">
@@ -405,13 +433,13 @@
                 </div>
               </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
       </div>
     </div>
     <!--case study ends-->
     <!--working process starts-->
-    <div class="working_process_block">
+    <div class="working_process_block block">
       <div class="work_title_block">
         <div class="work_title">
           <h2>Our Working Process</h2>
@@ -422,7 +450,7 @@
       </div>
     </div>
     <!--accordion starts-->
-    <div class="accordion_block">
+    <div class="accordion_block ">
       <div class="display_block">
         <button class="accordion">
           <p><b>01</b> Consultation and Analysis</p>
@@ -523,7 +551,7 @@
     <!--accordion ends-->
     <!--working process ends-->
     <!--team section starts-->
-    <div class="team_block">
+    <div class="team_block block">
       <div class="team_title_desc">
         <div class="team_title">
           <h2>Team</h2>
@@ -568,7 +596,7 @@
           <div class="card_content">
             <div class="name_role">
               <div class="profile_image">
-                <img src="images/team/team_1.png" alt="" />
+                <img src="images/team/team_02.png" alt="" />
               </div>
               <div class="name_media">
                 <div class="media">
@@ -594,7 +622,7 @@
           <div class="card_content">
             <div class="name_role">
               <div class="profile_image">
-                <img src="images/team/team_1.png" alt="" />
+                <img src="images/team/team_03.png" alt="" />
               </div>
               <div class="name_media">
                 <div class="media">
@@ -620,7 +648,7 @@
           <div class="card_content">
             <div class="name_role">
               <div class="profile_image">
-                <img src="images/team/team_1.png" alt="" />
+                <img src="images/team/avatar.png" alt="" />
               </div>
               <div class="name_media">
                 <div class="media">
@@ -646,7 +674,7 @@
           <div class="card_content">
             <div class="name_role">
               <div class="profile_image">
-                <img src="images/team/team_1.png" alt="" />
+                <img src="images/team/team_05.png" alt="" />
               </div>
               <div class="name_media">
                 <div class="media">
@@ -673,7 +701,7 @@
           <div class="card_content">
             <div class="name_role">
               <div class="profile_image">
-                <img src="images/team/team_1.png" alt="" />
+                <img src="images/team/avatar.png" alt="" />
               </div>
               <div class="name_media">
                 <div class="media">
@@ -701,7 +729,7 @@
     </div>
     <!--team section ends-->
     <!--Testimonials starts-->
-    <div class="testimonals_block">
+    <div class="testimonals_block block">
       <div class="title_desc">
         <div class="title"><h2>Partnerships</h2></div>
         <div class="testminoal_text">
@@ -711,7 +739,7 @@
           </p>
         </div>
       </div>
-      <div class="carousel_block">
+      <div class="carousel_block block">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -816,7 +844,7 @@
                 </div>
               </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
       </div>
     </div>
@@ -829,96 +857,22 @@
           <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
         </div>
       </div>
-      <div class="contact_page">
+      <div class="contact_page flex">
         <div class="form_block">
           <div class="contact_input_block">
-            <!-- <form>
-              <label for="name">Name :</label><br />
-              <input type="text" id="name" name="name" /><br />
-              <label for="mail">Email * : </label><br />
-              <input type="text" id="mail" name="mail" /><br /><br />
-              <label for="message">Message * : </label>
-              <textarea id="message" cols="30" rows="10"></textarea>
-              <input
-                class="send_msg_btn submit_btn"
-                type="submit"
-                value="Send Message"
-              />
-            </form> -->
-
-            <!-- <div id="zf_div_uBWZh7DHbAxi_m0Cs7_PZz0o-kCtQMgbX2r6fkXJDNI"></div>
-            <script type="text/javascript">
-              (function () {
-                try {
-                  var f = document.createElement("iframe");
-                  f.src =
-                    "https://forms.zohopublic.in/basura1/form/Contactusform/formperma/uBWZh7DHbAxi_m0Cs7_PZz0o-kCtQMgbX2r6fkXJDNI?zf_rszfm=1";
-                  f.style.border = "none";
-                  f.style.height = "840px";
-                  f.style.width = "100%";
-                  f.style.transition = "all 0.5s ease";
-                  f.setAttribute("aria-label", "Contact\x20us\x20form");
-
-                  var d = document.getElementById(
-                    "zf_div_uBWZh7DHbAxi_m0Cs7_PZz0o-kCtQMgbX2r6fkXJDNI"
-                  );
-                  d.appendChild(f);
-                  window.addEventListener(
-                    "message",
-                    function () {
-                      var evntData = event.data;
-                      if (evntData && evntData.constructor == String) {
-                        var zf_ifrm_data = evntData.split("|");
-                        if (
-                          zf_ifrm_data.length == 2 ||
-                          zf_ifrm_data.length == 3
-                        ) {
-                          var zf_perma = zf_ifrm_data[0];
-                          var zf_ifrm_ht_nw =
-                            parseInt(zf_ifrm_data[1], 10) + 15 + "px";
-                          var iframe = document
-                            .getElementById(
-                              "zf_div_uBWZh7DHbAxi_m0Cs7_PZz0o-kCtQMgbX2r6fkXJDNI"
-                            )
-                            .getElementsByTagName("iframe")[0];
-                          if (
-                            iframe.src.indexOf("formperma") > 0 &&
-                            iframe.src.indexOf(zf_perma) > 0
-                          ) {
-                            var prevIframeHeight = iframe.style.height;
-                            var zf_tout = false;
-                            if (zf_ifrm_data.length == 3) {
-                              iframe.scrollIntoView();
-                              zf_tout = true;
-                            }
-                            if (prevIframeHeight != zf_ifrm_ht_nw) {
-                              if (zf_tout) {
-                                setTimeout(function () {
-                                  iframe.style.height = zf_ifrm_ht_nw;
-                                }, 500);
-                              } else {
-                                iframe.style.height = zf_ifrm_ht_nw;
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    false
-                  );
-                } catch (e) {}
-              })();
-            </script> -->
             <!--Form start here-->
             <form id="ContactForm" action='https://forms.zohopublic.in/basura1/form/Contactusform/formperma/MMrCMkjZF8MxylHByCmyhXHxSLaqG-zqzeeRg3qk8Eo/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
               <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
               <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
             <div class="zf-subContWrap zf-topAlign">
               <div class="contact-box flex">
-                <input type="radio" id="Radio_1" name="Radio" value="Say&#x20;Hi" checked >
-                <label for="Radio_1" >Say&#x20;Hi</label>
+                <p class="radio_input"><input type="radio" id="Radio_1" name="Radio" value="Say&#x20;Hi" checked >
+                  <label for="Radio_1" >Say&#x20;Hi</label>
+                </p>
+               <p>
                 <input type="radio" id="Radio_2" name="Radio" value="Get&#x20;a&#x20;Quote">
                 <label for="Radio_2" >Get&#x20;a&#x20;Quote</label>
+               </p>
               </div>
               <ul>
               <!---------Single Line Starts Here---------->
@@ -927,7 +881,9 @@
               <em class="zf-important">*</em>
               </label>
               <div class="zf-tempContDiv">
-              <span> <input type="text" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="Enter&#x20;your&#x20;Name"/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+              <span> 
+                <input type="text" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="Enter&#x20;your&#x20;Name"/></span> 
+                <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
               </div><div class="zf-clearBoth"></div></li><!---------Single Line Ends Here---------->
               <!---------Email Starts Here---------->  
               <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
@@ -935,7 +891,7 @@
               <em class="zf-important">*</em>
               </label>
               <div class="zf-tempContDiv">
-              <span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder=""/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+              <span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="Enter email"/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
               </div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
               <!---------Multiple Line Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
@@ -943,12 +899,12 @@
               <em class="zf-important">*</em>
               </label>
               <div class="zf-tempContDiv">
-              <span> <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder=""></textarea> </span><p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+              <span> <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder="Your message"></textarea> </span><p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
               </div><div class="zf-clearBoth"></div></li><!---------Multiple Line Ends Here---------->
               </ul></div><!---------template Container Starts Here---------->
               <ul>
                 <li class="zf-fmFooter">
-                <button class="zf-submitColor" >Submit</button>
+                <button class="btn btn--primary btn--form zf-submitColor">Send Message</button>
               </li>
             </ul>
            </div><!-- 'zf-templateWrapper' ends -->
@@ -962,7 +918,7 @@
     </div>
     <!--contact us ends-->
     <!--footer starts-->
-    <div class="footer_block">
+    <div class="footer_block block">
       <footer>
         <div class="navigation_contact_block">
           <div class="navigation_block">
@@ -1003,16 +959,14 @@
                 <p>Address: 96 Wadsworth Terrace Suite 3C New York, NY 10040</p>
               </div>
             </div>
-            <div class="subscribe_block">
-              <form>
-                <input type="email" placeholder="Email" class="sub_input" />
-                <!-- <button class="subscribe_btn"><a href="#"><p>Subscribe to news</p></a></button> -->
-                <input
-                  class="subscribe_btn"
-                  type="submit"
-                  value="Subscribe to news"
-                />
-              </form>
+            <div class="subscribe_block flex">
+              <form action='https://forms.zohopublic.in/basura1/form/Emailsubscription/formperma/vFIfp_NVkpu0t_v5ZCBCIpvZPAeMIvmrmA4nz_VOsTo/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                <!--Email-->
+                <input class="input-controller" type="text" maxlength="255" name="Email" value="" fieldType=9 placeholder="Email" />
+                <button class="btn btn--secondary" type="submit">Subscribe to news</button></form>
             </div>
           </div>
           <div class="portion"></div>
@@ -1024,14 +978,14 @@
       </footer>
     </div>
     <!--footer ends-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 20,
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -1043,6 +997,28 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+
+const CaseStudySlider = new Swiper('.mySwiper', {
+  // Optional parameters
+  slidesPerView: 3,
+  spaceBetween: 20,
+  direction: 'horizontal',
+  loop: true,
+  speed: 2000,
+  autoplay: {
+    enabled: true,
+		delay: 0,
+		pauseOnMouseEnter: true,
+		disableOnInteraction: false,
+  },
+  breakpoints : {
+    600 : {
+      slidesPerView : 2,
+    }
+  },
+
+});
     </script>
     <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
       var zf_MonthYearRegex = new RegExp("^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
