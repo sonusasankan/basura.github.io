@@ -1202,6 +1202,13 @@ footer {
     min-height: 64px;
     height: auto;
   }
+  .block{
+    margin-top: 30px;
+  }
+  .nav_logo{
+    width: 200px;
+    height: 70px;
+  }
   .nav_menu {
     width: 100%;
     height: auto;
@@ -1243,6 +1250,8 @@ footer {
     order: 1;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
   }
   .primary_btn {
     width: 226px;
@@ -1268,6 +1277,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
   }
   .service_name {
     display: flex;
@@ -1363,6 +1373,7 @@ footer {
     height: auto;
     padding: 0 20px;
     overflow: hidden;
+    margin-top: 30px;
   }
   .case {
     width: 100%;
@@ -1456,7 +1467,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
   .team_text {
     margin: auto;
@@ -1492,6 +1503,9 @@ footer {
   .media {
     width: auto;
   }
+  .team_cards_block{
+    margin-top: 20px;
+  }
   .name_media {
     width: auto;
     height: auto;
@@ -1513,7 +1527,7 @@ footer {
     float: none;
   }
   .testimonals_block {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 0 10px;
     display: flex;
     flex-direction: column;
@@ -1531,6 +1545,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
+  }
+  .title_desc{
     margin-bottom: 10px;
   }
   .testminoal_text {
@@ -1551,7 +1568,7 @@ footer {
   .contact_page {
     width: 100%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-top: 10px;
   }
   .form_block {

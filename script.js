@@ -42,26 +42,35 @@ const partnersSwiper = new Swiper('#partnersSwiper', {
 });
 
 
-// const CaseStudySlider = new Swiper('.mySwiper', {
-//   // Optional parameters
-//   slidesPerView: 3,
-//   spaceBetween: 20,
-//   direction: 'horizontal',
-//   loop: true,
-//   speed: 2000,
-//   autoplay: {
-//     enabled: true,
-// 		delay: 0,
-// 		pauseOnMouseEnter: true,
-// 		disableOnInteraction: false,
-//   },
-//   breakpoints : {
-//     600 : {
-//       slidesPerView : 2,
-//     }
-//   },
-
-// });
+const CaseStudySlider = new Swiper('#CaseStudySlider', {
+  // Optional parameters
+  slidesPerView: 3,
+  spaceBetween: 20,
+  direction: 'horizontal',
+  loop: true,
+  speed: 2000,
+  autoplay: {
+    enabled: true,
+		delay: 0,
+		pauseOnMouseEnter: true,
+		disableOnInteraction: false,
+  },
+  breakpoints : {
+    600 : {
+      slidesPerView : 2,
+    }
+  },
+  breakpoints : {
+    767 : {
+      slidesPerView: 1,
+      spaceBetween : 10,
+    },
+    600 : {
+      slidesPerView: 1,
+      spaceBetween : 5,
+    },
+  },
+});
 
 document.onscroll = (e) => {
   console.log(e, window.scrollY);
