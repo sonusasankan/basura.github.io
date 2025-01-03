@@ -11,5 +11,5 @@ export default defineConfig({
       }
     }
   },
-  base: '/basura_landing_page'
+  base: '/basura_landing_page/deploy'
 });
