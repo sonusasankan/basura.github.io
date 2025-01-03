@@ -10,5 +10,6 @@ export default defineConfig({
         main: 'index.html' // Specify your main HTML file as the entry point
       }
     }
-  }
+  },
+  base: '/basura_landing_page'
 });
